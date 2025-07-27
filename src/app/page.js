@@ -56,7 +56,7 @@ export default function Home() {
               Bien-être, Spa et Beauté
             </motion.h2>
 
-            {/* 3. Noémie Saddier avec animation spéciale */}
+            {/* 3. Noémie Saddier avec la couleur du bouton */}
             <motion.h3
               className="text-2xl md:text-4xl font-serif font-semibold mb-6 bg-gradient-to-r from-nude-400 to-nude-600 bg-clip-text text-transparent drop-shadow-sm"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -131,14 +131,26 @@ export default function Home() {
       {/* Section Mon Histoire */}
       <section className="py-20 bg-nude-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
               Mon Histoire
             </h2>
-          </div>
+          </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-nude-700 leading-relaxed">
+            <motion.div
+              className="space-y-6 text-nude-700 leading-relaxed"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            >
               <p>
                 À la suite de 7 années d&apos;expériences en institut de beauté,
                 Spas hôteliers et urbains, ma passion pour le métier m&apos;a
@@ -171,9 +183,15 @@ export default function Home() {
                 duo, ce lieu unique à La Roche vous transporte dans un pur
                 moment de détente et de relaxation absolue.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="relative">
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            >
               <Image
                 src="/image/accueil-serenityspa.jpeg"
                 alt="Enseigne Serenity Spa"
@@ -181,10 +199,16 @@ export default function Home() {
                 height={400}
                 className="rounded-2xl shadow-xl"
               />
-            </div>
+            </motion.div>
           </div>
 
-          <div className="mt-12 text-nude-700 leading-relaxed space-y-6">
+          <motion.div
+            className="mt-12 text-nude-700 leading-relaxed space-y-6"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          >
             <p>
               Nous disposons de 3 cabines de soins dont 2 transformables en duo
               et espace accueil avec un pôle onglerie mains et pieds. Nous
@@ -195,23 +219,41 @@ export default function Home() {
               SkinNeedler… et d&apos;autres prestations esthétiques.
             </p>
 
-            <p className="text-center font-medium text-lg text-nude-600">
+            <motion.p
+              className="text-center font-medium text-lg text-nude-600"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+            >
               Laurie, Manon et moi-même sommes ravies de prendre soin de vous le
               temps d&apos;un instant.
-            </p>
+            </motion.p>
 
-            <p className="text-center italic text-nude-600">
+            <motion.p
+              className="text-center italic text-nude-600"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
+            >
               Aujourd&apos;hui le Spa continue de s&apos;agrandir grâce à vous.
               Merci !
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </section>
 
       {/* Section Spa Privatif */}
       <section className="py-20 bg-nude-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
               Espace Serenity Privatif
             </h2>
@@ -219,10 +261,22 @@ export default function Home() {
               Laissez vous transporter dans une ambiance zen et chaleureuse et
               profitez d&apos;une parenthèse de détente hors du temps.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            <div className="space-y-6">
+          <motion.div
+            className="grid lg:grid-cols-2 gap-12 mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          >
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+            >
               <Image
                 src="/image/spa-privatif.jpeg"
                 alt="Spa Privatif"
@@ -230,8 +284,14 @@ export default function Home() {
                 height={400}
                 className="rounded-2xl shadow-xl w-full"
               />
-            </div>
-            <div className="space-y-6">
+            </motion.div>
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+            >
               <Image
                 src="/image/espace-spa-privatif.jpeg"
                 alt="Espace Spa Privatif"
@@ -239,19 +299,35 @@ export default function Home() {
                 height={400}
                 className="rounded-2xl shadow-xl w-full"
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div className="bg-white rounded-3xl p-8 shadow-xl">
-            <p className="text-nude-700 leading-relaxed mb-8 text-center">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+          >
+            <p className="text-lg text-nude-700 mb-6">
               L&apos;espace Serenity Privatif* se compose d&apos;un bain à
-              remous, d&apos;un hammam, d&apos;un saune et d&apos;une salle de
+              remous, d&apos;un hammam, d&apos;un sauna et d&apos;une salle de
               repos - tisanerie.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <motion.div
+              className="grid md:grid-cols-2 gap-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
+            >
               {/* Privatisation groupe */}
-              <div className="bg-nude-100 rounded-2xl p-6">
+              <motion.div
+                className="bg-nude-100 rounded-2xl p-6"
+                whileHover={{ scale: 1.02, y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-4">
                   Privatisation 2h
                 </h3>
@@ -277,10 +353,14 @@ export default function Home() {
                     <span className="font-semibold">375€</span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Privatisation solo */}
-              <div className="bg-nude-100 rounded-2xl p-6">
+              <motion.div
+                className="bg-nude-100 rounded-2xl p-6"
+                whileHover={{ scale: 1.02, y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-4">
                   Solo
                 </h3>
@@ -308,10 +388,14 @@ export default function Home() {
                     (valable 6 mois, possibilité de l&apos;utiliser à deux)
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Hammam/Sauna seul */}
-              <div className="bg-nude-100 rounded-2xl p-6">
+              <motion.div
+                className="bg-nude-100 rounded-2xl p-6"
+                whileHover={{ scale: 1.02, y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-4">
                   Hammam/Sauna
                 </h3>
@@ -331,10 +415,14 @@ export default function Home() {
                     <span className="font-semibold">135€ / 205€</span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Informations */}
-              <div className="bg-nude-200 rounded-2xl p-6">
+              <motion.div
+                className="bg-nude-200 rounded-2xl p-6"
+                whileHover={{ scale: 1.02, y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h3 className="text-xl font-serif font-semibold text-nude-700 mb-4">
                   Informations importantes
                 </h3>
@@ -352,141 +440,159 @@ export default function Home() {
                     renseignements.
                   </p>
                 </div>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="text-center mt-8">
-              <button
+            <motion.div
+              className="mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: 1.2, ease: "easeOut" }}
+            >
+              <motion.button
                 onClick={() => setIsModalOpen(true)}
                 className="btn-spa text-white px-8 py-3 rounded-full font-medium shadow-lg"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
               >
                 En savoir plus
-              </button>
-            </div>
-          </div>
+              </motion.button>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* Section Visite Virtuelle */}
-      <section id="visite" className="py-20 bg-nude-200">
+      <section className="py-20 bg-nude-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
-              Découvrez Notre Spa
+              Visite Virtuelle
             </h2>
-            <p className="text-xl text-nude-600 max-w-4xl mx-auto">
-              Plongez dans l&apos;univers apaisant de Serenity Spa grâce à notre
-              visite virtuelle. Explorez nos espaces de détente depuis chez vous
-              avant de venir vivre l&apos;expérience.
+            <p className="text-xl text-nude-600 max-w-3xl mx-auto">
+              Découvrez notre espace privatif de bien-être en 360° avant votre
+              visite
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Informations sur la visite virtuelle */}
-            <div className="space-y-8">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-6">
-                  Visite Virtuelle Interactive
-                </h3>
-
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-rose-300 to-rose-400 rounded-full flex items-center justify-center mt-1">
-                      <svg
-                        className="w-4 h-4 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                        <path
-                          fillRule="evenodd"
-                          d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-nude-700 mb-2">
-                        Explorez chaque espace
-                      </h4>
-                      <p className="text-nude-600">
-                        Découvrez nos cabines de soins, l&apos;espace privatif
-                        avec hammam, sauna et jacuzzi, ainsi que notre accueil
-                        chaleureux.
-                      </p>
-                    </div>
+            <motion.div
+              className="space-y-8"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            >
+              <div className="space-y-6">
+                <motion.div
+                  className="flex items-start space-x-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+                >
+                  <div className="bg-nude-400 rounded-full p-3 mt-1">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
                   </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-rose-300 to-rose-400 rounded-full flex items-center justify-center mt-1">
-                      <svg
-                        className="w-4 h-4 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-nude-700 mb-2">
-                        Ambiance authentique
-                      </h4>
-                      <p className="text-nude-600">
-                        Ressentez l&apos;atmosphère zen et chaleureuse qui vous
-                        attend. Chaque détail a été pensé pour votre bien-être.
-                      </p>
-                    </div>
+                  <div>
+                    <h4 className="font-semibold text-nude-700 mb-2">
+                      Explorez notre spa privatif
+                    </h4>
+                    <p className="text-nude-600">
+                      Visitez virtuellement notre hammam, sauna, jacuzzi et
+                      espace détente avant de réserver votre créneau.
+                    </p>
                   </div>
+                </motion.div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-rose-300 to-rose-400 rounded-full flex items-center justify-center mt-1">
-                      <svg
-                        className="w-4 h-4 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-nude-700 mb-2">
-                        Navigation intuitive
-                      </h4>
-                      <p className="text-nude-600">
-                        Utilisez votre souris pour vous déplacer et découvrir
-                        tous les recoins de notre espace de bien-être unique à
-                        La Roche-sur-Foron.
-                      </p>
-                    </div>
+                <motion.div
+                  className="flex items-start space-x-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+                >
+                  <div className="bg-nude-400 rounded-full p-3 mt-1">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
                   </div>
-                </div>
-
-                <div className="mt-8 space-y-4">
-                  <a
-                    href="https://www.kalendes.com/site/serenityspanoemiesaddier/welcome"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-spa text-white px-8 py-3 rounded-full font-medium w-full shadow-lg inline-block text-center"
-                  >
-                    Réserver ma séance
-                  </a>
-                  <button className="bg-nude-100 text-nude-800 border border-nude-300 px-8 py-3 rounded-full font-medium w-full hover:bg-nude-200 transition-colors">
-                    Nous contacter
-                  </button>
-                </div>
+                  <div>
+                    <h4 className="font-semibold text-nude-700 mb-2">
+                      Navigation intuitive
+                    </h4>
+                    <p className="text-nude-600">
+                      Utilisez votre souris pour vous déplacer et découvrir tous
+                      les recoins de notre espace de bien-être unique à La
+                      Roche-sur-Foron.
+                    </p>
+                  </div>
+                </motion.div>
               </div>
-            </div>
+
+              <motion.div
+                className="space-y-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+              >
+                <motion.a
+                  href="https://www.kalendes.com/site/serenityspanoemiesaddier/welcome"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-spa text-white px-8 py-3 rounded-full font-medium w-full shadow-lg inline-block text-center"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  Réserver ma séance
+                </motion.a>
+                <motion.button
+                  className="bg-nude-100 text-nude-800 border border-nude-300 px-8 py-3 rounded-full font-medium w-full hover:bg-nude-200 transition-colors"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  Nous contacter
+                </motion.button>
+              </motion.div>
+            </motion.div>
 
             {/* Visite virtuelle interactive */}
-            <div className="bg-white rounded-2xl p-4 shadow-lg">
+            <motion.div
+              className="bg-white rounded-2xl p-4 shadow-lg"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            >
               <div className="rounded-xl overflow-hidden bg-nude-100">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!4v1753085891444!6m8!1m7!1sCAoSHENJQUJJaERFWHhYOEMtWGRFRXNIa2ZudWRwcGM.!2m2!1d46.06593657441184!2d6.311598047209364!3f339.48126883605903!4f-0.09043518996399769!5f0.7820865974627469"
@@ -508,12 +614,22 @@ export default function Home() {
                   contrôles pour zoomer
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Call to action en bas */}
-          <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-nude-400 to-nude-600 rounded-2xl p-8 text-white">
+          <motion.div
+            className="text-center mt-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          >
+            <motion.div
+              className="bg-gradient-to-r from-nude-400 to-nude-600 rounded-2xl p-8 text-white"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
               <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-4">
                 Prêt pour votre moment de détente ?
               </h3>
@@ -521,23 +637,38 @@ export default function Home() {
                 Après cette visite virtuelle, venez vivre l&apos;expérience
                 Serenity Spa en réel !
               </p>
-              <a
+              <motion.a
                 href="https://www.kalendes.com/site/serenityspanoemiesaddier/welcome"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-nude-800 px-8 py-3 rounded-full font-semibold text-lg hover:bg-nude-50 transition-colors shadow-lg inline-block"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
               >
                 Réserver maintenant
-              </a>
-            </div>
-          </div>
+              </motion.a>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-nude-700 text-nude-100 py-8">
+      <motion.footer
+        className="bg-nude-700 text-nude-100 py-8"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6 mb-6">
+          <motion.div
+            className="grid md:grid-cols-3 gap-6 mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          >
             {/* Logo et description */}
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start mb-3">
@@ -567,62 +698,40 @@ export default function Home() {
             </div>
 
             {/* Horaires et Navigation */}
-            <div className="text-center">
-              <h4 className="text-lg font-serif font-semibold mb-3 text-nude-200">
-                Horaires
-              </h4>
-              <div className="text-nude-300 text-sm space-y-1 mb-4">
-                <p>Lun : 10h-13h / 14h-19h</p>
-                <p>Mar-Ven : 9h-13h / 14h-19h</p>
-                <p>Sam : 9h-13h / 14h-17h30</p>
+            <div className="text-center md:text-left">
+              <h4 className="font-semibold mb-3 text-nude-200">Horaires</h4>
+              <div className="space-y-1 text-sm text-nude-300 mb-4">
+                <p>Lundi : 10h - 13h / 14h - 19h</p>
+                <p>Mardi au vendredi : 9h - 13h / 14h - 19h</p>
+                <p>Samedi : 9h - 13h / 14h - 17h30</p>
               </div>
-              <div className="flex flex-wrap justify-center gap-3 text-xs">
+              <div className="space-y-1 text-sm">
                 <a
                   href="#accueil"
-                  className="text-nude-400 hover:text-white transition-colors"
+                  className="block text-nude-300 hover:text-nude-100 transition-colors"
                 >
                   Accueil
                 </a>
                 <a
                   href="#soins"
-                  className="text-nude-400 hover:text-white transition-colors"
+                  className="block text-nude-300 hover:text-nude-100 transition-colors"
                 >
                   Soins
-                </a>
-                <a
-                  href="#visite"
-                  className="text-nude-400 hover:text-white transition-colors"
-                >
-                  Visite
                 </a>
               </div>
             </div>
 
             {/* Contact et Réseaux */}
-            <div className="text-center md:text-right">
-              <h4 className="text-lg font-serif font-semibold mb-3 text-nude-200">
-                Contact
-              </h4>
-
-              <div className="text-nude-300 text-sm space-y-1 mb-4">
+            <div className="text-center md:text-left">
+              <h4 className="font-semibold mb-3 text-nude-200">Contact</h4>
+              <div className="space-y-2 text-sm text-nude-300 mb-4">
                 <p>43 rue Perrine</p>
                 <p>74800 La Roche-sur-Foron</p>
-                <a
-                  href="tel:0450256867"
-                  className="block hover:text-white transition-colors"
-                >
-                  04 50 25 68 67
-                </a>
-                <a
-                  href="mailto:ns.serenityspa@gmail.com"
-                  className="block hover:text-white transition-colors text-xs"
-                >
-                  ns.serenityspa@gmail.com
-                </a>
+                <p>📞 04 50 25 68 67</p>
+                <p>✉️ ns.serenityspa@gmail.com</p>
               </div>
 
-              {/* Réseaux sociaux */}
-              <div className="flex justify-center md:justify-end space-x-3 mb-3">
+              <div className="flex space-x-3 justify-center md:justify-start">
                 <a
                   href="https://www.facebook.com/p/Serenity-Spa-Noémie-Saddier-100078877596673/"
                   target="_blank"
@@ -656,36 +765,36 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Copyright */}
-          <div className="border-t border-nude-600 pt-4 text-center">
-            <p className="text-nude-400 text-xs">
-              © 2025 Serenity Spa - Tous droits réservés
+          <motion.div
+            className="text-center pt-4 border-t border-nude-600"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          >
+            <p className="text-nude-300 text-sm">
+              Réservation en ligne ou par téléphone
             </p>
-          </div>
+          </motion.div>
         </div>
-      </footer>
+      </motion.footer>
 
       {/* Modal */}
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        title="Informations détaillées"
+        title="Espace Serenity Privatif"
       >
         <div className="space-y-4">
           <p>
-            Ici vous pourrez ajouter toutes les informations complémentaires sur
-            l&apos;espace Serenity Privatif que vous souhaitez communiquer à vos
-            clients.
+            Contenu du modal à définir selon les informations supplémentaires
+            que vous souhaitez partager sur l&apos;espace privatif.
           </p>
           <p>
-            Vous pourrez détailler les équipements, les règles
-            d&apos;utilisation, les conseils, les contre-indications, etc.
-          </p>
-          <p className="text-sm text-nude-600">
-            Vous pourrez me fournir le texte complet à intégrer dans cette
-            modale plus tard.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
       </Modal>
