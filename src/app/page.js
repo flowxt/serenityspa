@@ -660,17 +660,153 @@ export default function Home() {
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        title="Espace Serenity Privatif"
+        title="Règlement Espace Serenity Privatif"
       >
-        <div className="space-y-4">
-          <p>
-            Contenu du modal à définir selon les informations supplémentaires
-            que vous souhaitez partager sur l&apos;espace privatif.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+        <div className="space-y-6 text-nude-700 leading-relaxed max-h-96 overflow-y-auto">
+          {/* Âge et accès */}
+          <div>
+            <h4 className="font-semibold text-nude-800 mb-2 flex items-center">
+              <span className="mr-2">👥</span>
+              Conditions d&apos;accès
+            </h4>
+            <p className="text-sm">
+              Le spa est un lieu de détente et de repos réservé exclusivement
+              aux personnes de plus de 16 ans. Toute personne de moins de 18 ans
+              doit être accompagnée d&apos;une personne majeure. La direction se
+              réserve le droit d&apos;entrée.
+            </p>
+          </div>
+
+          {/* Contre-indications */}
+          <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+            <h4 className="font-semibold text-red-800 mb-2 flex items-center">
+              <span className="mr-2">⚠️</span>
+              Contre-indications importantes
+            </h4>
+            <div className="text-sm text-red-700 space-y-2">
+              <p>
+                <strong>Cet espace est interdit aux femmes enceintes</strong>{" "}
+                dues aux fortes températures et aux huiles essentielles
+                vaporisées ainsi qu&apos;aux jets de massages puissants pouvant
+                engendrer des contractions et naissance prématurée.
+              </p>
+              <p>
+                Il est fortement déconseillé également aux personnes ayant des{" "}
+                <strong>
+                  problèmes cardiaques, problèmes dorsaux graves et varices
+                </strong>
+                .
+              </p>
+              <p className="italic">
+                Pour plus d&apos;informations, veuillez contacter votre médecin
+                et nous apporter un justificatif de ce dernier donnant droit à
+                accéder à l&apos;espace privatif.
+              </p>
+            </div>
+          </div>
+
+          {/* Modalités pratiques */}
+          <div>
+            <h4 className="font-semibold text-nude-800 mb-2 flex items-center">
+              <span className="mr-2">🕒</span>
+              Modalités pratiques
+            </h4>
+            <div className="text-sm space-y-2">
+              <p>• Le règlement s&apos;effectuera à l&apos;arrivée au spa.</p>
+              <p>
+                • Nous vous faisons venir{" "}
+                <strong>15 min avant l&apos;heure du spa</strong> pour vous
+                installer aux vestiaires, vous changer et prendre une douche qui
+                est <strong>obligatoire</strong>.
+              </p>
+              <p>
+                • Tout retard n&apos;étant pas du fait du Serenity Spa sera
+                imputé sur le temps de prestation.
+              </p>
+              <p>
+                • Si le temps aux vestiaires est dépassé abusivement, un
+                règlement par tranche de 15 min vous sera demandé à la sortie du
+                Spa.
+              </p>
+              <p>
+                • Le port du <strong>maillot de bain est OBLIGATOIRE</strong>.
+                Toute personne n&apos;ayant pas de maillot de bain ne pourra se
+                rendre dans l&apos;espace privatif.
+              </p>
+            </div>
+          </div>
+
+          {/* Équipements fournis */}
+          <div className="bg-nude-50 p-4 rounded-lg">
+            <h4 className="font-semibold text-nude-800 mb-2 flex items-center">
+              <span className="mr-2">🧖‍♀️</span>
+              Équipements fournis
+            </h4>
+            <div className="text-sm space-y-2">
+              <p>Le Serenity Spa met à disposition :</p>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>Un peignoir</li>
+                <li>Une serviette de bain</li>
+                <li>Une paire de chaussons</li>
+              </ul>
+              <p className="mt-2">
+                Toutes vos affaires personnelles* seront rangées dans un casier
+                dans les vestiaires.
+                <span className="text-xs italic">
+                  (*bijoux, sacs, produits cosmétiques, argent...)
+                </span>
+              </p>
+              <p className="text-xs italic text-nude-600">
+                La direction décline toute responsabilité en cas de perte ou de
+                vol.
+              </p>
+            </div>
+          </div>
+
+          {/* Interdictions */}
+          <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-400">
+            <h4 className="font-semibold text-orange-800 mb-2 flex items-center">
+              <span className="mr-2">🚫</span>
+              Il est strictement interdit
+            </h4>
+            <ul className="text-sm text-orange-700 space-y-1 list-disc list-inside">
+              <li>
+                De mettre tout objet ou liquide dans le jacuzzi sous peine de
+                poursuite
+              </li>
+              <li>D&apos;apporter tout type de nourritures et de boissons</li>
+              <li>
+                De fumer ou vapoter à l&apos;intérieur de l&apos;espace privatif
+              </li>
+              <li>
+                De sauter ou d&apos;éclabousser dans le jacuzzi, ce n&apos;est
+                pas une piscine
+              </li>
+              <li>D&apos;avoir tout comportement inadéquat et irrespectueux</li>
+            </ul>
+          </div>
+
+          {/* Sécurité */}
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h4 className="font-semibold text-blue-800 mb-2 flex items-center">
+              <span className="mr-2">🔒</span>
+              Sécurité
+            </h4>
+            <p className="text-sm text-blue-700">
+              Pour votre sécurité, l&apos;espace de détente est sous
+              vidéo-surveillance.
+            </p>
+          </div>
+
+          {/* Bouton de fermeture */}
+          <div className="text-center pt-4">
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="btn-spa text-white px-6 py-2 rounded-full font-medium text-sm"
+            >
+              J&apos;ai lu et j&apos;accepte
+            </button>
+          </div>
         </div>
       </Modal>
     </div>
