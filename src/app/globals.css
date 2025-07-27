@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf9f7;
+  --foreground: #5d4e37;
+  --nude-light: #f5f1ec;
+  --nude-medium: #e8ddd4;
+  --nude-dark: #d4c4b0;
+  --accent: #c4a484;
+  --text-primary: #5d4e37;
+  --text-secondary: #8b7355;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
+  
+  /* Couleurs personnalisées */
+  --color-nude-50: #faf9f7;
+  --color-nude-100: #f5f1ec;
+  --color-nude-200: #e8ddd4;
+  --color-nude-300: #d4c4b0;
+  --color-nude-400: #c4a484;
+  --color-nude-500: #a08660;
+  --color-nude-600: #8b7355;
+  --color-nude-700: #5d4e37;
+  --color-nude-800: #4a3d2a;
+  --color-nude-900: #3d321f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #faf9f7;
+    --foreground: #5d4e37;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles personnalisés pour le spa */
+.text-gradient {
+  background: linear-gradient(135deg, #c4a484 0%, #8b7355 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-spa {
+  background: linear-gradient(135deg, #c4a484 0%, #a08660 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-spa:hover {
+  background: linear-gradient(135deg, #a08660 0%, #8b7355 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(196, 164, 132, 0.3);
+}
+
+/* Style script élégant pour Noemie Saddier comme sur le mur */
+.name-script {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 1.2em;
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 30%, #e67e22 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(212, 175, 55, 0.3);
+  transform: rotate(-3deg);
+  display: inline-block;
+}
+
+/* Style script pour la tagline comme sur le mur */
+.tagline-script {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.9);
+  transform: rotate(-2deg);
+  display: inline-block;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
