@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
 
 export default function Soins() {
   const [activeFilter, setActiveFilter] = useState("tous");
@@ -529,6 +530,8 @@ export default function Soins() {
           </motion.div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
