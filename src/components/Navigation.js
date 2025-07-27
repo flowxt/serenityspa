@@ -1,14 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Accueil", href: "#accueil" },
-    { name: "Soins", href: "#soins" },
+    { name: "Accueil", href: "/" },
+    { name: "Soins", href: "/soins" },
     { name: "Esthétique", href: "#esthetique" },
     { name: "Avis", href: "#avis" },
     { name: "Contact", href: "#contact" },
@@ -32,15 +33,25 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-nude-700 hover:text-nude-500 transition-colors duration-300 font-medium"
-                >
-                  {item.name}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.href.startsWith("#") ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-nude-700 hover:text-nude-500 transition-colors duration-300 font-medium"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="text-nude-700 hover:text-nude-500 transition-colors duration-300 font-medium"
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
               <a
                 href="https://www.kalendes.com/site/serenityspanoemiesaddier/welcome"
                 target="_blank"
@@ -88,16 +99,27 @@ export default function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-nude-50 border-t border-nude-200">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-nude-700 hover:text-nude-500 transition-colors duration-300"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.href.startsWith("#") ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="block px-3 py-2 text-nude-700 hover:text-nude-500 transition-colors duration-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="block px-3 py-2 text-nude-700 hover:text-nude-500 transition-colors duration-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
               <a
                 href="https://www.kalendes.com/site/serenityspanoemiesaddier/welcome"
                 target="_blank"
