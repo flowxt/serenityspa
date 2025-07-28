@@ -85,3 +85,43 @@ body {
   display: inline-block;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
+
+/* Animations de défilement infini pour les avis */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-right {
+  animation: scroll-right 80s linear infinite;
+}
+
+.animate-scroll-left {
+  animation: scroll-left 90s linear infinite;
+}
+
+.animate-scroll-right:hover,
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
+
+/* Limitation de texte sur 3 lignes */
+.line-clamp-3 {
+  display: -webkit-box;
+  
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

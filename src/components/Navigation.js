@@ -11,8 +11,8 @@ export default function Navigation() {
     { name: "Accueil", href: "/" },
     { name: "Soins", href: "/soins" },
     { name: "Esthétique", href: "#esthetique" },
-    { name: "Avis", href: "#avis" },
-    { name: "Contact", href: "#contact" },
+    { name: "Avis", href: "/avis" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (

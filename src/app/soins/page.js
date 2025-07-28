@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
@@ -220,6 +221,98 @@ export default function Soins() {
         image: "/image/duo-visage-corps.jpg",
       },
     ],
+    evasions: [
+      {
+        id: 19,
+        name: "Rituel Délassant Dos",
+        duration: "45 min / 1h",
+        price: "55€ / 65€",
+        description:
+          "Gommage, enveloppement et massage du dos pour une détente absolue.",
+        details:
+          "Possibilité de rajouter vapeur + retrait des points noirs. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        category: "evasions",
+        brand: "MySpa",
+        image: "/image/rituel-dos.jpg",
+      },
+      {
+        id: 20,
+        name: "Evasion Douceur",
+        duration: "1h",
+        price: "90€",
+        description: "Gommage au choix et son enveloppement.",
+        details:
+          "Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        category: "evasions",
+        brand: "MySpa",
+        image: "/image/evasion-douceur.jpg",
+      },
+      {
+        id: 21,
+        name: "Evasion Cocooning",
+        duration: "1h / 1h30",
+        price: "90€ / 120€",
+        description: "Gommage au choix et massage Signature.",
+        details:
+          "Gommage au choix, massage Signature 30min / 1h. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        category: "evasions",
+        brand: "MySpa",
+        featured: true,
+        image: "/image/evasion-cocooning.jpg",
+      },
+      {
+        id: 22,
+        name: "Evasion Sérénité",
+        duration: "1h30 / 2h",
+        price: "110€ / 135€",
+        description: "Massage signature et soin du visage MySpa.",
+        details:
+          "Massage signature 30min / 1h, soin du visage MySpa. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        category: "evasions",
+        brand: "MySpa",
+        image: "/image/evasion-serenite.jpg",
+      },
+      {
+        id: 23,
+        name: "Evasion Signature MySpa",
+        duration: "1h30 / 2h",
+        price: "135€ / 165€",
+        description:
+          "Gommage, enveloppement et massage Signature pour un moment d'exception.",
+        details:
+          "Gommage au choix et enveloppement, massage Signature 30min/1h. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        category: "evasions",
+        brand: "MySpa",
+        featured: true,
+        image: "/image/evasion-signature.jpg",
+      },
+      {
+        id: 24,
+        name: "Evasion Délicate",
+        duration: "2h / 2h30",
+        price: "135€ / 165€",
+        description: "Rituel complet alliant gommage, massage et soin visage.",
+        details:
+          "Gommage au choix, massage Signature 30min / 1h, soin du visage MySpa. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        category: "evasions",
+        brand: "MySpa",
+        image: "/image/evasion-delicate.jpg",
+      },
+      {
+        id: 25,
+        name: "Evasion Prestige",
+        duration: "2h30 / 3h",
+        price: "198€ / 225€",
+        description:
+          "Le rituel ultime MySpa pour une expérience de bien-être complète.",
+        details:
+          "Gommage au choix, enveloppement, massage 30min/1h, soin du visage MySpa. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        category: "evasions",
+        brand: "MySpa",
+        featured: true,
+        image: "/image/evasion-prestige.jpg",
+      },
+    ],
   };
 
   // Filtres disponibles
@@ -228,6 +321,7 @@ export default function Soins() {
     { id: "gommages", name: "Gommages & Enveloppements", icon: "✨" },
     { id: "signatures", name: "Massages Signatures", icon: "💆‍♀️" },
     { id: "mondes", name: "Massages du Monde", icon: "🌍" },
+    { id: "evasions", name: "Evasions sur-mesure MySpa", icon: "🌸" },
     { id: "enfants", name: "Enfants & Ados", icon: "👶" },
     { id: "famille", name: "Soins Duo Famille", icon: "👨‍👩‍👧‍👦" },
   ];
@@ -249,103 +343,60 @@ export default function Soins() {
       {/* Header Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-nude-100 to-nude-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <motion.h1
-              className="text-5xl md:text-6xl font-serif font-bold text-nude-800 mb-6 leading-tight"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            >
+          <div className="text-center">
+            <h1 className="text-5xl md:text-6xl font-serif font-bold text-nude-800 mb-6 leading-tight">
               Nos Soins
-            </motion.h1>
-            <motion.p
-              className="text-xl md:text-2xl text-nude-600 max-w-4xl mx-auto leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            >
+            </h1>
+            <p className="text-xl md:text-2xl text-nude-600 max-w-4xl mx-auto leading-relaxed">
               Découvrez notre gamme complète de soins et massages conçus pour
               votre bien-être et votre détente
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Filters Section */}
       <section className="py-8 bg-white shadow-sm sticky top-20 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="flex flex-wrap justify-center gap-3"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
-          >
-            {filters.map((filter, index) => (
+          <div className="flex flex-wrap justify-center gap-3">
+            {filters.map((filter) => (
               <motion.button
                 key={filter.id}
                 onClick={() => setActiveFilter(filter.id)}
                 className={`px-6 py-3 rounded-full font-medium text-sm transition-all duration-300 flex items-center gap-2 ${
                   activeFilter === filter.id
-                    ? "bg-nude-600 text-white shadow-lg scale-105"
-                    : "bg-nude-100 text-nude-700 hover:bg-nude-200 hover:scale-102"
+                    ? "bg-nude-600 text-white shadow-lg"
+                    : "bg-nude-100 text-nude-700 hover:bg-nude-200"
                 }`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.4,
-                  delay: 0.8 + index * 0.1,
-                  ease: "easeOut",
-                }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
               >
                 <span>{filter.icon}</span>
                 <span>{filter.name}</span>
                 {activeFilter === filter.id && (
-                  <motion.span
-                    className="bg-white text-nude-600 text-xs px-2 py-1 rounded-full font-semibold"
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 0.3 }}
-                  >
+                  <span className="bg-white text-nude-600 text-xs px-2 py-1 rounded-full font-semibold">
                     {filteredSoins.length}
-                  </motion.span>
+                  </span>
                 )}
               </motion.button>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Soins Cards Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
-            {filteredSoins.map((soin, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredSoins.map((soin) => (
               <motion.div
                 key={soin.id}
                 className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full ${
                   soin.featured ? "ring-2 ring-nude-400 ring-opacity-50" : ""
                 }`}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.6,
-                  delay: 1 + index * 0.1,
-                  ease: "easeOut",
-                }}
-                whileHover={{ y: -3, scale: 1.01 }}
-                layout
+                whileHover={{ y: -5, scale: 1.02 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
               >
                 {/* Contenu de la carte */}
                 <div className="p-6 flex flex-col flex-grow">
@@ -354,6 +405,11 @@ export default function Soins() {
                     {soin.featured && (
                       <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
                         ⭐ Populaire
+                      </span>
+                    )}
+                    {soin.brand === "MySpa" && (
+                      <span className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                        🌸 MySpa
                       </span>
                     )}
                     {soin.origin && (
@@ -407,25 +463,19 @@ export default function Soins() {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Informations importantes */}
       <section className="py-16 bg-nude-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="grid md:grid-cols-2 gap-8"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
+          <div className="grid md:grid-cols-2 gap-8">
             {/* Options et abonnements */}
             <motion.div
-              className="bg-white rounded-2xl p-8 shadow-lg"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              whileHover={{ scale: 1.02, y: -3 }}
+              transition={{ duration: 0.2 }}
             >
               <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-6">
                 Options & Abonnements
@@ -457,14 +507,25 @@ export default function Soins() {
                     <p className="text-xs text-nude-500 mt-2">Valable 6 mois</p>
                   </div>
                 </div>
+                <div className="border-t border-nude-200 pt-4 mt-4">
+                  <h4 className="font-semibold text-nude-700 mb-3">
+                    Option Évasions MySpa
+                  </h4>
+                  <div className="flex justify-between items-center p-3 bg-gradient-to-r from-rose-50 to-pink-50 rounded-xl">
+                    <span className="font-medium text-nude-700">
+                      Option SPA privatif 1h30 - 1 pers
+                    </span>
+                    <span className="text-nude-600 font-semibold">+55€</span>
+                  </div>
+                </div>
               </div>
             </motion.div>
 
             {/* Informations importantes */}
             <motion.div
-              className="bg-nude-600 text-white rounded-2xl p-8 shadow-lg"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
+              className="bg-nude-600 text-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              whileHover={{ scale: 1.02, y: -3 }}
+              transition={{ duration: 0.2 }}
             >
               <h3 className="text-2xl font-serif font-semibold mb-6">
                 Informations Importantes
@@ -496,19 +557,132 @@ export default function Soins() {
                 </div>
               </div>
             </motion.div>
-          </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Partenaire MySpa */}
+      <section className="py-16 bg-gradient-to-br from-rose-50 to-pink-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
+              Notre Partenaire MySpa
+            </h2>
+            <p className="text-xl text-nude-600 max-w-3xl mx-auto leading-relaxed">
+              Découvrez l&apos;excellence des produits MySpa de Deborrha pour
+              des rituels d&apos;exception
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <motion.div
+              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              whileHover={{ scale: 1.02, y: -3 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="relative h-48 mb-4">
+                <Image
+                  src="/image/myspadeborrha.jpeg"
+                  alt="MySpa by Deborrha"
+                  fill
+                  className="object-cover rounded-xl"
+                />
+              </div>
+              <h3 className="text-lg font-serif font-semibold text-nude-700 text-center">
+                MySpa by Deborrha
+              </h3>
+            </motion.div>
+
+            <motion.div
+              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              whileHover={{ scale: 1.02, y: -3 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="relative h-48 mb-4">
+                <Image
+                  src="/image/creme-myspa.jpeg"
+                  alt="Crème MySpa"
+                  fill
+                  className="object-cover rounded-xl"
+                />
+              </div>
+              <h3 className="text-lg font-serif font-semibold text-nude-700 text-center">
+                Soins Visage MySpa
+              </h3>
+            </motion.div>
+
+            <motion.div
+              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              whileHover={{ scale: 1.02, y: -3 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="relative h-48 mb-4">
+                <Image
+                  src="/image/collection-cleopatre-myspa.jpeg"
+                  alt="Collection Cléopâtre MySpa"
+                  fill
+                  className="object-cover rounded-xl"
+                />
+              </div>
+              <h3 className="text-lg font-serif font-semibold text-nude-700 text-center">
+                Collection Cléopâtre
+              </h3>
+            </motion.div>
+
+            <motion.div
+              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              whileHover={{ scale: 1.02, y: -3 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="relative h-48 mb-4">
+                <Image
+                  src="/image/masque-myspa.jpeg"
+                  alt="Masque MySpa"
+                  fill
+                  className="object-cover rounded-xl"
+                />
+              </div>
+              <h3 className="text-lg font-serif font-semibold text-nude-700 text-center">
+                Masques MySpa
+              </h3>
+            </motion.div>
+          </div>
+
+          <div className="text-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
+              <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-4">
+                L&apos;Excellence MySpa au Serenity Spa
+              </h3>
+              <p className="text-nude-600 leading-relaxed mb-6">
+                Nous sommes fiers de vous proposer les rituels MySpa de
+                Deborrha, une marque française reconnue pour ses formules
+                d&apos;exception et ses textures sensorielles uniques. Chaque
+                soin MySpa est conçu pour offrir une expérience sensorielle
+                inoubliable alliant efficacité et plaisir.
+              </p>
+              <div className="grid md:grid-cols-3 gap-4 text-sm">
+                <div className="flex items-center justify-center space-x-2 text-nude-600">
+                  <span className="text-rose-400">🌸</span>
+                  <span>Produits français</span>
+                </div>
+                <div className="flex items-center justify-center space-x-2 text-nude-600">
+                  <span className="text-rose-400">✨</span>
+                  <span>Formules d&apos;exception</span>
+                </div>
+                <div className="flex items-center justify-center space-x-2 text-nude-600">
+                  <span className="text-rose-400">💎</span>
+                  <span>Expérience sensorielle</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Call to action */}
       <section className="py-16 bg-gradient-to-r from-nude-400 to-nude-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
+          <div>
             <h2 className="text-3xl md:text-4xl font-serif font-semibold text-white mb-6">
               Prêt pour votre moment de détente ?
             </h2>
@@ -527,7 +701,7 @@ export default function Soins() {
             >
               Réserver maintenant
             </motion.a>
-          </motion.div>
+          </div>
         </div>
       </section>
 

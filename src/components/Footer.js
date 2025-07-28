@@ -69,6 +69,12 @@ export default function Footer() {
               >
                 Soins
               </Link>
+              <Link
+                href="/avis"
+                className="block text-nude-300 hover:text-nude-100 transition-colors"
+              >
+                Avis
+              </Link>
             </div>
           </div>
 
