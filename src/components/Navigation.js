@@ -10,7 +10,7 @@ export default function Navigation() {
   const navItems = [
     { name: "Accueil", href: "/" },
     { name: "Soins", href: "/soins" },
-    { name: "Esthétique", href: "#esthetique" },
+    { name: "Esthétique", href: "/esthetique" },
     { name: "Avis", href: "/avis" },
     { name: "Contact", href: "/contact" },
   ];
