@@ -257,121 +257,177 @@ export default function Avis() {
             </h2>
           </div>
 
-          {/* Première ligne - défilement de gauche à droite */}
-          <div className="relative mb-6">
-            <div className="flex animate-scroll-right space-x-6">
-              {/* Premier groupe d'avis (pairs) */}
-              {avisClients
-                .filter((_, index) => index % 2 === 0)
-                .map((avis, index) => (
-                  <div
-                    key={`right-first-${avis.id}`}
-                    className="flex-shrink-0 w-96 h-52 bg-nude-50 rounded-xl p-6 hover:bg-nude-100 transition-colors duration-300 flex flex-col"
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="flex space-x-1">
-                        {renderStars(avis.note)}
+          {/* Desktop - Défilement double lignes */}
+          <div className="hidden lg:block">
+            {/* Première ligne - défilement de gauche à droite */}
+            <div className="relative mb-6">
+              <div className="flex animate-scroll-right space-x-6">
+                {/* Premier groupe d'avis (pairs) */}
+                {avisClients
+                  .filter((_, index) => index % 2 === 0)
+                  .map((avis, index) => (
+                    <div
+                      key={`right-first-${avis.id}`}
+                      className="flex-shrink-0 w-96 h-52 bg-nude-50 rounded-xl p-6 hover:bg-nude-100 transition-colors duration-300 flex flex-col"
+                    >
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex space-x-1">
+                          {renderStars(avis.note)}
+                        </div>
+                        <span className="text-xs text-nude-500">
+                          {avis.date}
+                        </span>
                       </div>
-                      <span className="text-xs text-nude-500">{avis.date}</span>
-                    </div>
 
-                    <div className="flex-grow">
-                      <p className="text-nude-700 leading-relaxed mb-3 text-sm">
-                        &ldquo;{avis.commentaire}&rdquo;
+                      <div className="flex-grow">
+                        <p className="text-nude-700 leading-relaxed mb-3 text-sm">
+                          &ldquo;{avis.commentaire}&rdquo;
+                        </p>
+                      </div>
+
+                      <p className="font-semibold text-nude-800 text-sm mt-auto">
+                        {avis.nom}
                       </p>
                     </div>
+                  ))}
 
-                    <p className="font-semibold text-nude-800 text-sm mt-auto">
-                      {avis.nom}
-                    </p>
-                  </div>
-                ))}
-
-              {/* Duplication pour le défilement infini */}
-              {avisClients
-                .filter((_, index) => index % 2 === 0)
-                .map((avis, index) => (
-                  <div
-                    key={`right-second-${avis.id}`}
-                    className="flex-shrink-0 w-96 h-52 bg-nude-50 rounded-xl p-6 hover:bg-nude-100 transition-colors duration-300 flex flex-col"
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="flex space-x-1">
-                        {renderStars(avis.note)}
+                {/* Duplication pour le défilement infini */}
+                {avisClients
+                  .filter((_, index) => index % 2 === 0)
+                  .map((avis, index) => (
+                    <div
+                      key={`right-second-${avis.id}`}
+                      className="flex-shrink-0 w-96 h-52 bg-nude-50 rounded-xl p-6 hover:bg-nude-100 transition-colors duration-300 flex flex-col"
+                    >
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex space-x-1">
+                          {renderStars(avis.note)}
+                        </div>
+                        <span className="text-xs text-nude-500">
+                          {avis.date}
+                        </span>
                       </div>
-                      <span className="text-xs text-nude-500">{avis.date}</span>
-                    </div>
 
-                    <div className="flex-grow">
-                      <p className="text-nude-700 leading-relaxed mb-3 text-sm">
-                        &ldquo;{avis.commentaire}&rdquo;
+                      <div className="flex-grow">
+                        <p className="text-nude-700 leading-relaxed mb-3 text-sm">
+                          &ldquo;{avis.commentaire}&rdquo;
+                        </p>
+                      </div>
+
+                      <p className="font-semibold text-nude-800 text-sm mt-auto">
+                        {avis.nom}
                       </p>
                     </div>
+                  ))}
+              </div>
+            </div>
 
-                    <p className="font-semibold text-nude-800 text-sm mt-auto">
-                      {avis.nom}
-                    </p>
-                  </div>
-                ))}
+            {/* Deuxième ligne - défilement de droite à gauche */}
+            <div className="relative">
+              <div className="flex animate-scroll-left space-x-6">
+                {/* Deuxième groupe d'avis (impairs) */}
+                {avisClients
+                  .filter((_, index) => index % 2 === 1)
+                  .map((avis, index) => (
+                    <div
+                      key={`left-first-${avis.id}`}
+                      className="flex-shrink-0 w-96 h-52 bg-nude-100 rounded-xl p-6 hover:bg-nude-200 transition-colors duration-300 flex flex-col"
+                    >
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex space-x-1">
+                          {renderStars(avis.note)}
+                        </div>
+                        <span className="text-xs text-nude-500">
+                          {avis.date}
+                        </span>
+                      </div>
+
+                      <div className="flex-grow">
+                        <p className="text-nude-700 leading-relaxed mb-3 text-sm">
+                          &ldquo;{avis.commentaire}&rdquo;
+                        </p>
+                      </div>
+
+                      <p className="font-semibold text-nude-800 text-sm mt-auto">
+                        {avis.nom}
+                      </p>
+                    </div>
+                  ))}
+
+                {/* Duplication pour le défilement infini */}
+                {avisClients
+                  .filter((_, index) => index % 2 === 1)
+                  .map((avis, index) => (
+                    <div
+                      key={`left-second-${avis.id}`}
+                      className="flex-shrink-0 w-96 h-52 bg-nude-100 rounded-xl p-6 hover:bg-nude-200 transition-colors duration-300 flex flex-col"
+                    >
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex space-x-1">
+                          {renderStars(avis.note)}
+                        </div>
+                        <span className="text-xs text-nude-500">
+                          {avis.date}
+                        </span>
+                      </div>
+
+                      <div className="flex-grow">
+                        <p className="text-nude-700 leading-relaxed mb-3 text-sm">
+                          &ldquo;{avis.commentaire}&rdquo;
+                        </p>
+                      </div>
+
+                      <p className="font-semibold text-nude-800 text-sm mt-auto">
+                        {avis.nom}
+                      </p>
+                    </div>
+                  ))}
+              </div>
             </div>
           </div>
 
-          {/* Deuxième ligne - défilement de droite à gauche */}
-          <div className="relative">
-            <div className="flex animate-scroll-left space-x-6">
-              {/* Deuxième groupe d'avis (impairs) */}
-              {avisClients
-                .filter((_, index) => index % 2 === 1)
-                .map((avis, index) => (
-                  <div
-                    key={`left-first-${avis.id}`}
-                    className="flex-shrink-0 w-96 h-52 bg-nude-100 rounded-xl p-6 hover:bg-nude-200 transition-colors duration-300 flex flex-col"
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="flex space-x-1">
-                        {renderStars(avis.note)}
-                      </div>
-                      <span className="text-xs text-nude-500">{avis.date}</span>
+          {/* Mobile & Tablet - Grille statique responsive */}
+          <div className="lg:hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto px-4">
+              {avisClients.slice(0, 12).map((avis, index) => (
+                <motion.div
+                  key={`mobile-${avis.id}`}
+                  className="bg-nude-50 rounded-xl p-4 md:p-6 hover:bg-nude-100 transition-colors duration-300 flex flex-col h-auto"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex space-x-1">
+                      {renderStars(avis.note)}
                     </div>
+                    <span className="text-xs text-nude-500">{avis.date}</span>
+                  </div>
 
-                    <div className="flex-grow">
-                      <p className="text-nude-700 leading-relaxed mb-3 text-sm">
-                        &ldquo;{avis.commentaire}&rdquo;
-                      </p>
-                    </div>
-
-                    <p className="font-semibold text-nude-800 text-sm mt-auto">
-                      {avis.nom}
+                  <div className="flex-grow">
+                    <p className="text-nude-700 leading-relaxed mb-3 text-sm">
+                      &ldquo;{avis.commentaire}&rdquo;
                     </p>
                   </div>
-                ))}
 
-              {/* Duplication pour le défilement infini */}
-              {avisClients
-                .filter((_, index) => index % 2 === 1)
-                .map((avis, index) => (
-                  <div
-                    key={`left-second-${avis.id}`}
-                    className="flex-shrink-0 w-96 h-52 bg-nude-100 rounded-xl p-6 hover:bg-nude-200 transition-colors duration-300 flex flex-col"
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="flex space-x-1">
-                        {renderStars(avis.note)}
-                      </div>
-                      <span className="text-xs text-nude-500">{avis.date}</span>
-                    </div>
+                  <p className="font-semibold text-nude-800 text-sm mt-auto">
+                    {avis.nom}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
 
-                    <div className="flex-grow">
-                      <p className="text-nude-700 leading-relaxed mb-3 text-sm">
-                        &ldquo;{avis.commentaire}&rdquo;
-                      </p>
-                    </div>
-
-                    <p className="font-semibold text-nude-800 text-sm mt-auto">
-                      {avis.nom}
-                    </p>
-                  </div>
-                ))}
+            {/* Voir plus sur mobile */}
+            <div className="text-center mt-8">
+              <a
+                href="https://share.google/Yn7dQiTPluKTqS07J"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-nude-600 text-white px-8 py-3 rounded-full font-medium hover:bg-nude-700 transition-colors"
+              >
+                Voir tous nos avis Google
+              </a>
             </div>
           </div>
         </div>
