@@ -18,9 +18,9 @@ export default function Soins() {
         duration: "45 min",
         price: "50€",
         description:
-          "Exfoliation du corps suivi d'une hydration pour une peau lisse et veloutée.",
+          "Exfoliation du corps suivi d'une hydratation pour une peau lisse et veloutée.",
         details:
-          "Senteurs : Vanille, mangue, fleur de cerisier, agrumes, amyris/patchouli, feuilles vertes",
+          "Senteurs : Vanille, mangue, fleur de cerisier, agrumes, amyris/patchouli",
         category: "gommages",
         image: "/image/gommage.jpg",
       },
@@ -32,7 +32,7 @@ export default function Soins() {
         description:
           "Nutrition intense du corps pour une peau douce et nourrie.",
         details:
-          "Senteur : Vanille, mangue, fleur de cerisier, agrumes, amyris/patchouli, feuilles vertes",
+          "Senteur : Vanille, mangue, fleur de cerisier, agrumes, amyris/patchouli, coco",
         category: "gommages",
         image: "/image/enveloppement.jpg",
       },
@@ -77,17 +77,7 @@ export default function Soins() {
         description:
           "Massage spécifique doux pour un moment de détente de la future maman.",
         details:
-          "À partir du 4e mois jusqu'au 8e mois. (Position PLS et sur le dos)",
-        category: "signatures",
-        special: "future-maman",
-        image: "/image/massage-future-maman.jpg",
-      },
-      {
-        id: 7,
-        name: "Massage Future Maman - Avant du Corps",
-        duration: "30 min",
-        price: "50€",
-        description: "Massage doux spécialement adapté aux futures mamans.",
+          "À partir du 4ème mois jusqu'au 8ème mois. (Position PLS et sur le dos)",
         category: "signatures",
         special: "future-maman",
         image: "/image/massage-future-maman.jpg",
@@ -114,9 +104,9 @@ export default function Soins() {
         description:
           "Massage ancestral issu des cultures indiennes, indonésiennes et chinoises.",
         details:
-          "À la fois doux et tonique, relaxant et énergétique. Permet de retrouver une harmonie totale entre le corps et l'esprit.",
+          "À la fois doux et tonique, relaxant et énergétique. Il permet de retrouver une harmonie totale entre le corps et l'esprit.",
         category: "mondes",
-        origin: "Bali",
+        origin: "Asie",
         image: "/image/massage-balinais.jpg",
       },
       {
@@ -229,8 +219,7 @@ export default function Soins() {
         price: "55€ / 65€",
         description:
           "Gommage, enveloppement et massage du dos pour une détente absolue.",
-        details:
-          "Possibilité de rajouter vapeur + retrait des points noirs. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        details: "Possibilité de rajouter vapeur + retrait des points noirs.",
         category: "evasions",
         brand: "MySpa",
         image: "/image/rituel-dos.jpg",
@@ -242,7 +231,7 @@ export default function Soins() {
         price: "90€",
         description: "Gommage au choix et son enveloppement.",
         details:
-          "Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+          "Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes, coco",
         category: "evasions",
         brand: "MySpa",
         image: "/image/evasion-douceur.jpg",
@@ -253,8 +242,7 @@ export default function Soins() {
         duration: "1h / 1h30",
         price: "90€ / 120€",
         description: "Gommage au choix et massage Signature.",
-        details:
-          "Gommage au choix, massage Signature 30min / 1h. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        details: "Gommage au choix, massage Signature 30min / 1h.",
         category: "evasions",
         brand: "MySpa",
         featured: true,
@@ -266,8 +254,7 @@ export default function Soins() {
         duration: "1h30 / 2h",
         price: "110€ / 135€",
         description: "Massage signature et soin du visage MySpa.",
-        details:
-          "Massage signature 30min / 1h, soin du visage MySpa. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+        details: "Massage signature 30min / 1h, soin du visage MySpa.",
         category: "evasions",
         brand: "MySpa",
         image: "/image/evasion-serenite.jpg",
@@ -280,22 +267,22 @@ export default function Soins() {
         description:
           "Gommage, enveloppement et massage Signature pour un moment d'exception.",
         details:
-          "Gommage au choix et enveloppement, massage Signature 30min/1h. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+          "Gommage au choix et enveloppement, massage Signature 30min/1h.",
         category: "evasions",
         brand: "MySpa",
-        featured: true,
         image: "/image/evasion-signature.jpg",
       },
       {
         id: 24,
         name: "Evasion Délicate",
         duration: "2h / 2h30",
-        price: "135€ / 165€",
+        price: "155€ / 180€",
         description: "Rituel complet alliant gommage, massage et soin visage.",
         details:
-          "Gommage au choix, massage Signature 30min / 1h, soin du visage MySpa. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+          "Gommage au choix, massage Signature 30min / 1h, soin du visage MySpa.",
         category: "evasions",
         brand: "MySpa",
+        featured: true,
         image: "/image/evasion-delicate.jpg",
       },
       {
@@ -306,7 +293,7 @@ export default function Soins() {
         description:
           "Le rituel ultime MySpa pour une expérience de bien-être complète.",
         details:
-          "Gommage au choix, enveloppement, massage 30min/1h, soin du visage MySpa. Senteurs au choix : Vanille, mangue, fleur de cerisier, Amyris/patchouli, Agrumes",
+          "Gommage au choix, enveloppement, massage 30min/1h, soin du visage MySpa.",
         category: "evasions",
         brand: "MySpa",
         featured: true,
@@ -578,976 +565,12 @@ export default function Soins() {
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-nude-200">🤱</span>
-                  <p>Massage Future Maman : du 4e au 8e mois de grossesse.</p>
+                  <p>
+                    Massage Future Maman : du 4ème au 8ème mois de grossesse.
+                  </p>
                 </div>
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section Soins Visage d'Exception */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
-              Soins Visage d&apos;Exception
-            </h2>
-            <p className="text-xl text-nude-600 max-w-4xl mx-auto leading-relaxed">
-              Découvrez nos deux univers de soins visage : les rituels
-              traditionnels MySpa pour un voyage sensoriel, et la technologie
-              HydraFace by Yumi Beauty pour des résultats visibles immédiatement
-            </p>
-          </div>
-
-          {/* Soins Traditionnels MySpa */}
-          <div className="mb-16">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-to-r from-rose-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl">🌸</span>
-              </div>
-              <h3 className="text-3xl font-serif font-semibold text-nude-700 mb-4">
-                Soins Traditionnels MySpa
-              </h3>
-              <p className="text-lg text-nude-600 max-w-2xl mx-auto">
-                Découvrez les soins traditionnels de MySpa où chaque univers
-                vous emmène en voyage à travers le monde
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {/* Rituel Lift Yeux */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    🌸 MySpa
-                  </span>
-                  <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    🌺 Traditionnel
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Rituel Lift Yeux
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Soin ciblé contour des yeux pour retrouver un regard reposé et
-                  lumineux.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Ce soin peut s&apos;intégrer dans un autre soin visage MySpa
-                  (12€)
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">30 min</span>
-                  <span className="text-xl font-bold text-nude-600">40€</span>
-                </div>
-              </motion.div>
-
-              {/* Rituel Express Oxygénant */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    🌸 MySpa
-                  </span>
-                  <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    🌺 Traditionnel
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Rituel Express Oxygénant
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Ce soin express adapté à tous, laissera votre peau hydratée et
-                  oxygénée.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Nettoyage, gommage, masque, crème. Avec option LED thérapie:
-                  90€
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">30 min</span>
-                  <span className="text-xl font-bold text-nude-600">50€</span>
-                </div>
-              </motion.div>
-
-              {/* Rituel Visage au choix */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    🌸 MySpa
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Rituel Visage au Choix
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Voyage sensoriel avec trois univers au choix selon votre type
-                  de peau.
-                </p>
-                <div className="text-xs text-nude-500 mb-4 space-y-1">
-                  <p>🏝️ Lagons de Polynésie (Toutes peaux)</p>
-                  <p>👑 Cléopâtre (Peau mixte à grasse)</p>
-                  <p>🌸 Secrets du Japon (Peau sensible)</p>
-                  <p className="mt-2">Avec option LED thérapie: 109€</p>
-                </div>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">1h</span>
-                  <span className="text-xl font-bold text-nude-600">69€</span>
-                </div>
-              </motion.div>
-
-              {/* Rituel Jeunesse Lift */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    🌸 MySpa
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Rituel Jeunesse - Effet Lift
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Soin anti-âge aux actifs d&apos;exception pour retrouver
-                  jeunesse et vitalité.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Actifs au caviar pour rides et fermeté. Avec option LED
-                  thérapie: 120€
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">1h</span>
-                  <span className="text-xl font-bold text-nude-600">80€</span>
-                </div>
-              </motion.div>
-
-              {/* Rituel Jeunesse Tenseur */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    🌸 MySpa
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Rituel Jeunesse - Effet Tenseur
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Soin anti-âge global alliant luxe et volupté grâce au pouvoir
-                  du caviar.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Anti-âge global et taches pigmentaires
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">1h</span>
-                  <span className="text-xl font-bold text-nude-600">90€</span>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-
-          {/* Soins Techniques HydraFace */}
-          <div className="mb-16">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl">💎</span>
-              </div>
-              <h3 className="text-3xl font-serif font-semibold text-nude-700 mb-4">
-                Soins Techniques HydraFace by Yumi Beauty
-              </h3>
-              <p className="text-lg text-nude-600 max-w-3xl mx-auto">
-                Technologie brevetée avec acides de fruits et vitamines pour une
-                luminosité spectaculaire instantanée
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mb-8">
-              {/* HydraYeux */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💎 Yumi Beauty
-                  </span>
-                  <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    🔬 Technique
-                  </span>
-                  <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    💧 HydraFace
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  HydraYeux Défatiguant + LED
-                </h4>
-                <p className="text-nude-600 text-sm mb-4">
-                  Soin ciblé contour des yeux pour un regard reposé avec LED
-                  thérapie.
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">45 min</span>
-                  <span className="text-xl font-bold text-nude-600">55€</span>
-                </div>
-              </motion.div>
-
-              {/* HydraFace Pureté */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💎 Yumi Beauty
-                  </span>
-                  <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    💧 HydraFace
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  HydraFace Pureté
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Nettoyage intense combiné à un masque hydratant et à la
-                  cryothérapie.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Avec option LED thérapie (15min): 120€
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">1h - 1h15</span>
-                  <span className="text-xl font-bold text-nude-600">80€</span>
-                </div>
-              </motion.div>
-
-              {/* Soin Ciblé Anti-Âge */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💎 Yumi Beauty
-                  </span>
-                  <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    💧 HydraFace
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Soin Ciblé Anti-Âge
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Soin anti-âge avec ultrasons, radiofréquence,
-                  électrostimulation.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Visage et cou avec masque et cryo. Avec option LED thérapie
-                  (15min): 130€
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">1h - 1h15</span>
-                  <span className="text-xl font-bold text-nude-600">90€</span>
-                </div>
-              </motion.div>
-
-              {/* HydraFace Prestige */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💎 Yumi Beauty
-                  </span>
-                  <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    💧 HydraFace
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  HydraFace Prestige
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Soin complet sur mesure alliant nettoyage de peau et soin
-                  anti-âge.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Visage et cou. Avec option LED thérapie (15min): 160€
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">1h30 - 1h45</span>
-                  <span className="text-xl font-bold text-nude-600">120€</span>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-
-          {/* Cures Spécialisées */}
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl">📋</span>
-              </div>
-              <h3 className="text-3xl font-serif font-semibold text-nude-700 mb-4">
-                Cures Spécialisées
-              </h3>
-              <p className="text-lg text-nude-600 max-w-3xl mx-auto">
-                Pour un résultat optimal, il est recommandé de réaliser 3/4
-                soins en cure d&apos;attaque et par la suite des séances en
-                entretien
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {/* Cure Pureté */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💎 Yumi Beauty
-                  </span>
-                  <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    📋 Cure
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Cure 3 Soins Pureté + LED
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Cure de 3 soins Pureté avec LED thérapie pour un résultat
-                  optimal.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Un soin par mois. Pour un nettoyage en profondeur durable.
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">3 séances</span>
-                  <span className="text-xl font-bold text-nude-600">320€</span>
-                </div>
-              </motion.div>
-
-              {/* Cure Prestige */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💎 Yumi Beauty
-                  </span>
-                  <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    📋 Cure
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Cure 3 Soins Prestige + LED
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Cure de 3 soins Prestige avec LED thérapie pour un
-                  rajeunissement complet.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Un soin par mois. Programme anti-âge intensif.
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">3 séances</span>
-                  <span className="text-xl font-bold text-nude-600">430€</span>
-                </div>
-              </motion.div>
-
-              {/* Cure Anti-Âge */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💎 Yumi Beauty
-                  </span>
-                  <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    📋 Cure
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Cure 4 Soins Anti-Âge + LED
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Cure intensive de 4 soins anti-âge avec LED thérapie.
-                </p>
-                <p className="text-nude-500 text-xs mb-4">
-                  Un soin par semaine. Cure d&apos;attaque pour un effet
-                  maximal.
-                </p>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">4 séances</span>
-                  <span className="text-xl font-bold text-nude-600">470€</span>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-
-          {/* Option LED Thérapie */}
-          <motion.div
-            className="bg-gradient-to-r from-nude-600 to-nude-700 text-white rounded-3xl p-8 text-center max-w-4xl mx-auto"
-            whileHover={{ scale: 1.02, y: -3 }}
-            transition={{ duration: 0.2 }}
-          >
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-3xl">💡</span>
-              </div>
-              <h3 className="text-2xl font-serif font-semibold mb-4">
-                Option LED Thérapie
-              </h3>
-              <p className="text-lg opacity-90 leading-relaxed mb-6">
-                Masque spécifique + Tunnel LED - L&apos;utilisation de la
-                chromothérapie est fortement recommandée pour augmenter
-                durablement les effets du soin et conserver plus longtemps les
-                résultats obtenus
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6 text-sm">
-              <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-                <h4 className="font-semibold mb-2 text-gray-800">
-                  Résultats Optimisés
-                </h4>
-                <p className="text-gray-800 opacity-90">
-                  Effets du soin multipliés et prolongés
-                </p>
-              </div>
-              <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-                <h4 className="font-semibold mb-2 text-gray-800">
-                  Cure Recommandée
-                </h4>
-                <p className="text-gray-800 opacity-90">
-                  3-4 soins pour un résultat optimal
-                </p>
-              </div>
-              <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-                <h4 className="font-semibold mb-2 text-gray-800">
-                  Option Spa Privatif
-                </h4>
-                <p className="text-gray-800 opacity-90">
-                  1h30 pour 1 personne : 55€
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Section LED THERAPIE - LED LIGHT IR 2.0 */}
-      <section className="py-16 bg-gradient-to-br from-purple-50 to-indigo-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
-              LED THERAPIE - LED LIGHT IR 2.0
-            </h2>
-            <p className="text-xl text-nude-600 max-w-4xl mx-auto leading-relaxed">
-              Technologie nouvelle génération LLLT couplée à l&apos;infrarouge
-              pour une régénération cellulaire totale
-            </p>
-          </div>
-
-          {/* Présentation de la technologie */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            {/* Image et description */}
-            <motion.div
-              className="bg-white rounded-3xl p-8 shadow-xl"
-              whileHover={{ y: -3, scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="relative h-64 mb-6 rounded-2xl overflow-hidden">
-                <Image
-                  src="/image/IR2.png"
-                  alt="LED LIGHT IR 2.0"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-4">
-                Technologie LED LIGHT IR 2.0
-              </h3>
-              <p className="text-nude-600 leading-relaxed mb-4">
-                Le LED LIGHT IR 2.0 est un dispositif nouvelle génération conçu
-                pour traiter différentes problématiques de peau. Grâce à la
-                technologie LLLT (Low Level Led Therapy) couplée à de
-                l&apos;infrarouge, les longueurs d&apos;ondes sont transmises au
-                niveau sous-cutané sous forme de chaleur.
-              </p>
-              <div className="space-y-2 text-sm text-nude-600">
-                <p>✓ Facilite la circulation sanguine</p>
-                <p>✓ Stimule le collagène et l&apos;élastine</p>
-                <p>✓ Active le métabolisme cellulaire</p>
-                <p>✓ Relaxation musculaire complète</p>
-              </div>
-            </motion.div>
-
-            {/* Couleurs et bienfaits */}
-            <motion.div
-              className="bg-white rounded-3xl p-8 shadow-xl"
-              whileHover={{ y: -3, scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-            >
-              <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-6">
-                4 Couleurs Thérapeutiques
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-blue-500 rounded-full flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h4 className="font-semibold text-nude-700 mb-1">Bleu</h4>
-                    <p className="text-sm text-nude-600">
-                      Acné, points noirs, action bactéricide et purifiante
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h4 className="font-semibold text-nude-700 mb-1">Vert</h4>
-                    <p className="text-sm text-nude-600">
-                      Apaisant, peau sensible, cicatrisation, taches
-                      pigmentaires
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-yellow-500 rounded-full flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h4 className="font-semibold text-nude-700 mb-1">Jaune</h4>
-                    <p className="text-sm text-nude-600">
-                      Vaisseaux sanguins, lésions pigmentaires
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-red-500 rounded-full flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h4 className="font-semibold text-nude-700 mb-1">Rouge</h4>
-                    <p className="text-sm text-nude-600">
-                      Régénération cellulaire, stimulation collagène et
-                      élastine, anti-âge
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 p-4 bg-purple-50 rounded-xl">
-                <h4 className="font-semibold text-nude-700 mb-2">
-                  Masque Bio-Cellulose
-                </h4>
-                <p className="text-sm text-nude-600">
-                  Application d&apos;un masque en bio-cellulose riche en actifs
-                  hydratants. Sensation de seconde peau qui libère uniformément
-                  les actifs en profondeur et optimise leur absorption par
-                  occlusion. Adapté aux peaux les plus sensibles.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Soins LED disponibles */}
-          <div className="mb-12">
-            <h3 className="text-3xl font-serif font-semibold text-nude-700 text-center mb-8">
-              Nos Soins LED Thérapie
-            </h3>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* LED Ciblé Yeux/Lèvres */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💡 LED IR 2.0
-                  </span>
-                  <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    👁️ Ciblé
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Séance LED Ciblé Yeux ou Lèvres
-                </h4>
-                <p className="text-nude-600 text-sm mb-4">
-                  Traitement ciblé pour les zones délicates du contour des yeux
-                  et des lèvres.
-                </p>
-                <div className="space-y-2 text-xs text-nude-500 mb-4">
-                  <p>💡 Technologie LED IR 2.0</p>
-                  <p>📋 Cure 10 séances : 405€</p>
-                  <p>📅 2 à 3 séances / semaine</p>
-                </div>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">Séance</span>
-                  <span className="text-xl font-bold text-nude-600">45€</span>
-                </div>
-              </motion.div>
-
-              {/* LED Thérapie Classique */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💡 LED IR 2.0
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Séance LED Thérapie
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Masque spécifique en fonction des besoins de votre peau avec 4
-                  couleurs thérapeutiques.
-                </p>
-                <div className="space-y-1 text-xs text-nude-500 mb-4">
-                  <p>🔵 Acné, points noirs, purifiant</p>
-                  <p>💧 Hydratation intensive</p>
-                  <p>✨ Taches pigmentaires, éclat</p>
-                  <p>📋 Cure 10 séances : 495€</p>
-                </div>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">40 min</span>
-                  <span className="text-xl font-bold text-nude-600">55€</span>
-                </div>
-              </motion.div>
-
-              {/* LED Anti-Âge */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-nude-400 ring-opacity-50"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-nude-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    ⭐ Populaire
-                  </span>
-                  <span className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💡 LED IR 2.0
-                  </span>
-                  <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    ⚡ Premium
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Séance LED Thérapie Anti-Âge
-                </h4>
-                <p className="text-nude-600 text-sm mb-3">
-                  Masque anti-âge ++ au micro-courant drainant pour une peau
-                  lissée et raffermie.
-                </p>
-                <div className="space-y-1 text-xs text-nude-500 mb-4">
-                  <p>🔴 Régénération cellulaire</p>
-                  <p>⚡ Micro-courant drainant</p>
-                  <p>💪 Raffermissement cutané</p>
-                  <p>📋 Cure 10 séances : 585€</p>
-                </div>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">40 min</span>
-                  <span className="text-xl font-bold text-nude-600">65€</span>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-
-          {/* Cures d'entretien */}
-          <div className="mb-12">
-            <h3 className="text-3xl font-serif font-semibold text-nude-700 text-center mb-8">
-              Cures d&apos;Entretien
-            </h3>
-
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {/* Cure Entretien LED Classique */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    🔄 Entretien
-                  </span>
-                  <span className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💡 LED IR 2.0
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Cure d&apos;Entretien LED Thérapie
-                </h4>
-                <p className="text-nude-600 text-sm mb-4">
-                  4 séances d&apos;entretien pour maintenir les résultats
-                  obtenus.
-                </p>
-                <div className="space-y-1 text-xs text-nude-500 mb-4">
-                  <p>📅 1 séance / semaine ou mois</p>
-                  <p>🔄 Maintien des résultats</p>
-                  <p>💡 Technologie LED IR 2.0</p>
-                </div>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">4 séances</span>
-                  <span className="text-xl font-bold text-nude-600">198€</span>
-                </div>
-              </motion.div>
-
-              {/* Cure Entretien Anti-Âge */}
-              <motion.div
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                whileHover={{ y: -3, scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    🔄 Entretien
-                  </span>
-                  <span className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    💡 LED IR 2.0
-                  </span>
-                  <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    ⚡ Premium
-                  </span>
-                </div>
-                <h4 className="text-lg font-serif font-semibold text-nude-800 mb-2">
-                  Cure d&apos;Entretien Anti-Âge
-                </h4>
-                <p className="text-nude-600 text-sm mb-4">
-                  4 séances d&apos;entretien anti-âge avec micro-courant pour
-                  une action renforcée.
-                </p>
-                <div className="space-y-1 text-xs text-nude-500 mb-4">
-                  <p>📅 1 séance / semaine ou mois</p>
-                  <p>⚡ Micro-courant drainant</p>
-                  <p>🔄 Maintien anti-âge optimal</p>
-                </div>
-                <div className="flex justify-between items-center border-t border-nude-100 pt-3">
-                  <span className="text-nude-500 text-sm">4 séances</span>
-                  <span className="text-xl font-bold text-nude-600">235€</span>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-
-          {/* Recommandations */}
-          <motion.div
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-3xl p-8 text-center"
-            whileHover={{ scale: 1.02, y: -3 }}
-            transition={{ duration: 0.2 }}
-          >
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-3xl">📋</span>
-              </div>
-              <h3 className="text-2xl font-serif font-semibold mb-4">
-                Protocole Recommandé
-              </h3>
-              <p className="text-lg opacity-90 leading-relaxed">
-                Pour un résultat optimal en fonction de votre peau, il est
-                recommandé de réaliser 10 séances en cure d&apos;attaque et par
-                la suite des séances d&apos;entretien une fois par mois.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6 text-sm">
-              <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-                <h4 className="font-semibold mb-2 text-gray-800">
-                  Cure d&apos;Attaque
-                </h4>
-                <p className="text-gray-800 opacity-90">
-                  10 séances, 2-3 par semaine
-                </p>
-              </div>
-              <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-                <h4 className="font-semibold mb-2 text-gray-800">Entretien</h4>
-                <p className="text-gray-800 opacity-90">1 séance par mois</p>
-              </div>
-              <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-                <h4 className="font-semibold mb-2 text-gray-800">
-                  Technologie
-                </h4>
-                <p className="text-gray-800 opacity-90">
-                  LED IR 2.0 nouvelle génération
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Section Partenaire MySpa */}
-      <section className="py-16 bg-gradient-to-br from-rose-50 to-pink-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
-              Notre Partenaire MySpa
-            </h2>
-            <p className="text-xl text-nude-600 max-w-3xl mx-auto leading-relaxed">
-              Découvrez l&apos;excellence des produits MySpa de Deborrha pour
-              des rituels d&apos;exception
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <motion.div
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              whileHover={{ scale: 1.02, y: -3 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="relative h-48 mb-4">
-                <Image
-                  src="/image/myspadeborrha.jpeg"
-                  alt="MySpa by Deborrha"
-                  fill
-                  className="object-cover rounded-xl"
-                />
-              </div>
-              <h3 className="text-lg font-serif font-semibold text-nude-700 text-center">
-                MySpa by Deborrha
-              </h3>
-            </motion.div>
-
-            <motion.div
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              whileHover={{ scale: 1.02, y: -3 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="relative h-48 mb-4">
-                <Image
-                  src="/image/creme-myspa.jpeg"
-                  alt="Crème MySpa"
-                  fill
-                  className="object-cover rounded-xl"
-                />
-              </div>
-              <h3 className="text-lg font-serif font-semibold text-nude-700 text-center">
-                Soins Visage MySpa
-              </h3>
-            </motion.div>
-
-            <motion.div
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              whileHover={{ scale: 1.02, y: -3 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="relative h-48 mb-4">
-                <Image
-                  src="/image/collection-cleopatre-myspa.jpeg"
-                  alt="Collection Cléopâtre MySpa"
-                  fill
-                  className="object-cover rounded-xl"
-                />
-              </div>
-              <h3 className="text-lg font-serif font-semibold text-nude-700 text-center">
-                Collection Cléopâtre
-              </h3>
-            </motion.div>
-
-            <motion.div
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              whileHover={{ scale: 1.02, y: -3 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="relative h-48 mb-4">
-                <Image
-                  src="/image/masque-myspa.jpeg"
-                  alt="Masque MySpa"
-                  fill
-                  className="object-cover rounded-xl"
-                />
-              </div>
-              <h3 className="text-lg font-serif font-semibold text-nude-700 text-center">
-                Masques MySpa
-              </h3>
-            </motion.div>
-          </div>
-
-          <div className="text-center">
-            <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
-              <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-4">
-                L&apos;Excellence MySpa au Serenity Spa
-              </h3>
-              <p className="text-nude-600 leading-relaxed mb-6">
-                Nous sommes fiers de vous proposer les rituels MySpa de
-                Deborrha, une marque française reconnue pour ses formules
-                d&apos;exception et ses textures sensorielles uniques. Chaque
-                soin MySpa est conçu pour offrir une expérience sensorielle
-                inoubliable alliant efficacité et plaisir.
-              </p>
-              <div className="grid md:grid-cols-3 gap-4 text-sm">
-                <div className="flex items-center justify-center space-x-2 text-nude-600">
-                  <span className="text-rose-400">🌸</span>
-                  <span>Produits français</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2 text-nude-600">
-                  <span className="text-rose-400">✨</span>
-                  <span>Formules d&apos;exception</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2 text-nude-600">
-                  <span className="text-rose-400">💎</span>
-                  <span>Expérience sensorielle</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

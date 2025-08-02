@@ -164,10 +164,10 @@ export default function Home() {
                 Après 1 an et demi à travailler seule avec un planning
                 surchargé, j&apos;ai embauché Laurie en septembre 2023.
                 C&apos;est une amie et ancienne collègue de travail, qui est LA
-                personne de confiance pour commencer à évoluer petit à petit.
-                Puis Justine, qui était ma toute première stagiaire fin 2022 en
-                BTS 2ème année, nous a vite rejoint en novembre 2023 pour sa
-                formation d&apos;une année en alternance.
+                personne de confiance pour commencer à évoluer. Puis Justine,
+                qui était ma toute première stagiaire fin 2022 en BTS 2ème
+                année, nous a vite rejoint en novembre 2023 pour sa formation
+                d&apos;une année en alternance.
               </p>
 
               <p>
@@ -212,7 +212,7 @@ export default function Home() {
           >
             <p>
               Nous disposons de 3 cabines de soins dont 2 transformables en duo
-              et espace accueil avec un pôle onglerie mains et pieds. Nous
+              et un espace accueil avec un pôle onglerie mains et pieds. Nous
               proposons des massages bien-être, des soins du corps, des soins du
               visage traditionnels ou avec des technologies tel que le soin
               Hydraface avec la machine V3 de chez Yumi Beauty, le traitement
@@ -433,12 +433,16 @@ export default function Home() {
                     uniquement sur réservation.
                   </p>
                   <p>
-                    *Privatif : Pas d&apos;autres personnes sur votre créneau
-                    dans l&apos;espace détente.
+                    *Privatif : Pas d&apos;autres personnes sur votre créneau.
                   </p>
                   <p>
                     N&apos;hésitez pas à nous contacter pour plus de
                     renseignements.
+                  </p>
+                  <p>
+                    Pour les anniversaires, les enterrements de vie de jeunes
+                    filles et pour tout autres renseignements, n&apos;hésitez
+                    pas à nous contacter par téléphone.
                   </p>
                 </div>
               </motion.div>
@@ -783,6 +787,10 @@ export default function Home() {
                 pas une piscine
               </li>
               <li>D&apos;avoir tout comportement inadéquat et irrespectueux</li>
+              <li>
+                De se gommer à l&apos;intérieur du hammam. Le gommage étant une
+                prestation à part entière réalisée en cabine de soins.
+              </li>
             </ul>
           </div>
 

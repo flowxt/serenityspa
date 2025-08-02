@@ -25,27 +25,22 @@ export default function Esthetique() {
         name: "Mains de Velours",
         duration: "1h",
         price: "50€",
+        priceWithSemiPermanent: "85€",
         description:
           "Soin complet : Manucure, gommage et masque beurre de karité",
+        details: "Avec option semi-permanent = 85€",
         category: "mains",
         type: "premium",
         featured: true,
       },
-      {
-        id: 3,
-        name: "Option Pose Vernis Semi-Permanent",
-        duration: "30 min",
-        price: "35€",
-        description: "Application de vernis semi-permanent couleur",
-        category: "mains",
-        type: "option",
-      },
+
       {
         id: 4,
         name: "Vernis Semi-Permanent + Manucure",
         duration: "1h",
         price: "45€",
-        description: "Manucure complète avec pose de vernis semi-permanent",
+        description:
+          "Manucure complète avec pose de vernis semi-permanent. French uniquement avec Laurie sur demande",
         category: "mains",
         type: "complet",
       },
@@ -54,7 +49,8 @@ export default function Esthetique() {
         name: "Dépose et Repose Vernis Semi-Permanent",
         duration: "1h30",
         price: "55€",
-        description: "Retrait de l'ancien vernis et application du nouveau",
+        description:
+          "Retrait de l'ancien vernis et application du nouveau. French uniquement avec Laurie sur demande",
         category: "mains",
         type: "entretien",
       },
@@ -92,8 +88,10 @@ export default function Esthetique() {
         name: "Pieds Enchanteurs",
         duration: "1h15",
         price: "70€",
+        priceWithSemiPermanent: "105€",
         description:
           "Bain de pied, pédicure, callosités avec patchs Yumifeet et masque beurre de karité",
+        details: "Avec option semi-permanent = 105€",
         category: "pieds",
         type: "premium",
         featured: true,
@@ -104,7 +102,7 @@ export default function Esthetique() {
         duration: "30 min",
         price: "40€",
         description:
-          "Traitement anti callosités pour retrouver des pieds de bébé",
+          "Technique révolutionnaire aux acides de fruits pour retrouver des pieds de bébé",
         category: "pieds",
         type: "specialiste",
         brand: "YumiFeet",
@@ -114,7 +112,8 @@ export default function Esthetique() {
         name: "Vernis Semi-Permanent + Pédicure",
         duration: "1h15",
         price: "45€",
-        description: "Pédicure complète avec pose de vernis semi-permanent",
+        description:
+          "Pédicure complète avec pose de vernis semi-permanent. French uniquement avec Laurie sur demande",
         category: "pieds",
         type: "complet",
       },
@@ -123,7 +122,8 @@ export default function Esthetique() {
         name: "Dépose et Repose Vernis Semi-Permanent",
         duration: "1h45",
         price: "55€",
-        description: "Retrait de l'ancien vernis et application du nouveau",
+        description:
+          "Retrait de l'ancien vernis et application du nouveau. French uniquement avec Laurie sur demande",
         category: "pieds",
         type: "entretien",
       },
@@ -143,8 +143,7 @@ export default function Esthetique() {
         name: "Teinture Sourcils",
         duration: "15 min",
         price: "14€",
-        description:
-          "Teinture professionnelle pour des sourcils parfaitement définis",
+        description: "Pour des sourcils parfaitement définis",
         category: "teintures",
         zone: "sourcils",
       },
@@ -184,7 +183,7 @@ export default function Esthetique() {
         name: "Sourcils (Création)",
         duration: "20 min",
         price: "14€",
-        description: "Création de la forme parfaite de vos sourcils",
+        description: "",
         category: "epilationsFemmes",
         zone: "visage",
       },
@@ -193,7 +192,7 @@ export default function Esthetique() {
         name: "Sourcils (Entretien)",
         duration: "15 min",
         price: "10€",
-        description: "Entretien de la forme existante",
+        description: "",
         category: "epilationsFemmes",
         zone: "visage",
       },
@@ -202,7 +201,7 @@ export default function Esthetique() {
         name: "Nez ou Oreilles",
         duration: "10 min",
         price: "7€",
-        description: "Épilation précise des zones délicates",
+        description: "",
         category: "epilationsFemmes",
         zone: "visage",
       },
@@ -211,7 +210,7 @@ export default function Esthetique() {
         name: "Lèvres",
         duration: "10 min",
         price: "9€",
-        description: "Épilation du contour des lèvres",
+        description: "",
         category: "epilationsFemmes",
         zone: "visage",
       },
@@ -220,7 +219,7 @@ export default function Esthetique() {
         name: "Menton",
         duration: "10 min",
         price: "8€",
-        description: "Épilation du menton pour une peau lisse",
+        description: "",
         category: "epilationsFemmes",
         zone: "visage",
       },
@@ -229,7 +228,7 @@ export default function Esthetique() {
         name: "Sourcils + Lèvre",
         duration: "25 min",
         price: "17€",
-        description: "Formule combinée pour le haut du visage",
+        description: "",
         category: "epilationsFemmes",
         zone: "visage",
         type: "combo",
@@ -239,7 +238,7 @@ export default function Esthetique() {
         name: "Sourcils + Lèvre + Menton",
         duration: "35 min",
         price: "23€",
-        description: "Épilation complète du bas du visage",
+        description: "",
         category: "epilationsFemmes",
         zone: "visage",
         type: "combo",
@@ -249,7 +248,7 @@ export default function Esthetique() {
         name: "Visage Complet",
         duration: "45 min",
         price: "25€",
-        description: "Épilation intégrale du visage",
+        description: "",
         category: "epilationsFemmes",
         zone: "visage",
         type: "complet",
@@ -260,7 +259,7 @@ export default function Esthetique() {
         name: "Aisselles",
         duration: "15 min",
         price: "14€",
-        description: "Épilation des aisselles à la cire traditionnelle",
+        description: "",
         category: "epilationsFemmes",
         zone: "corps",
       },
@@ -269,7 +268,7 @@ export default function Esthetique() {
         name: "Bras",
         duration: "30 min",
         price: "21€",
-        description: "Épilation complète des bras",
+        description: "",
         category: "epilationsFemmes",
         zone: "corps",
       },
@@ -278,7 +277,7 @@ export default function Esthetique() {
         name: "Maillot Simple",
         duration: "20 min",
         price: "14€",
-        description: "Épilation du maillot classique",
+        description: "",
         category: "epilationsFemmes",
         zone: "intime",
       },
@@ -287,7 +286,7 @@ export default function Esthetique() {
         name: "Maillot Échancré",
         duration: "25 min",
         price: "20€",
-        description: "Épilation maillot plus étendue",
+        description: "",
         category: "epilationsFemmes",
         zone: "intime",
       },
@@ -296,7 +295,7 @@ export default function Esthetique() {
         name: "Maillot Semi-Intégral",
         duration: "30 min",
         price: "25€",
-        description: "Épilation maillot semi-intégrale",
+        description: "",
         category: "epilationsFemmes",
         zone: "intime",
       },
@@ -305,7 +304,7 @@ export default function Esthetique() {
         name: "Maillot Intégral",
         duration: "35 min",
         price: "30€",
-        description: "Épilation maillot intégrale",
+        description: "",
         category: "epilationsFemmes",
         zone: "intime",
       },
@@ -314,7 +313,7 @@ export default function Esthetique() {
         name: "Interfessier",
         duration: "10 min",
         price: "10€",
-        description: "Épilation de la zone interfessier",
+        description: "",
         category: "epilationsFemmes",
         zone: "intime",
       },
@@ -323,7 +322,7 @@ export default function Esthetique() {
         name: "Fesses",
         duration: "15 min",
         price: "14€",
-        description: "Épilation des fesses",
+        description: "",
         category: "epilationsFemmes",
         zone: "corps",
       },
@@ -332,7 +331,7 @@ export default function Esthetique() {
         name: "1/2 Jambes",
         duration: "25 min",
         price: "19€",
-        description: "Épilation des demi-jambes",
+        description: "",
         category: "epilationsFemmes",
         zone: "jambes",
       },
@@ -341,7 +340,7 @@ export default function Esthetique() {
         name: "3/4 Jambes",
         duration: "35 min",
         price: "24€",
-        description: "Épilation des 3/4 de jambes",
+        description: "",
         category: "epilationsFemmes",
         zone: "jambes",
       },
@@ -350,7 +349,7 @@ export default function Esthetique() {
         name: "Cuisses",
         duration: "30 min",
         price: "22€",
-        description: "Épilation des cuisses",
+        description: "",
         category: "epilationsFemmes",
         zone: "jambes",
       },
@@ -359,7 +358,7 @@ export default function Esthetique() {
         name: "Jambes Complètes",
         duration: "45 min",
         price: "30€",
-        description: "Épilation complète des jambes",
+        description: "",
         category: "epilationsFemmes",
         zone: "jambes",
       },
@@ -368,7 +367,7 @@ export default function Esthetique() {
         name: "Bas du Ventre / Bas du Dos",
         duration: "10 min",
         price: "7€",
-        description: "Épilation des zones bas ventre ou bas du dos",
+        description: "",
         category: "epilationsFemmes",
         zone: "corps",
       },
@@ -379,7 +378,7 @@ export default function Esthetique() {
         name: "Aisselles + 1/2 Jambes + Maillot Simple",
         duration: "1h",
         price: "42€",
-        description: "Forfait épilation économique pour l'essentiel",
+        description: "",
         category: "forfaits",
         zones: ["aisselles", "jambes", "maillot"],
         featured: true,
@@ -389,7 +388,7 @@ export default function Esthetique() {
         name: "Aisselles + 1/2 Jambes + Maillot Échancré",
         duration: "1h10",
         price: "48€",
-        description: "Forfait épilation avec maillot échancré",
+        description: "",
         category: "forfaits",
         zones: ["aisselles", "jambes", "maillot"],
       },
@@ -398,7 +397,7 @@ export default function Esthetique() {
         name: "Aisselles + 1/2 Jambes + Maillot Semi-Intégral",
         duration: "1h15",
         price: "53€",
-        description: "Forfait épilation avec maillot semi-intégral",
+        description: "",
         category: "forfaits",
         zones: ["aisselles", "jambes", "maillot"],
       },
@@ -407,7 +406,7 @@ export default function Esthetique() {
         name: "Aisselles + 1/2 Jambes + Maillot Intégral",
         duration: "1h20",
         price: "58€",
-        description: "Forfait épilation avec maillot intégral",
+        description: "",
         category: "forfaits",
         zones: ["aisselles", "jambes", "maillot"],
       },
@@ -416,7 +415,7 @@ export default function Esthetique() {
         name: "Aisselles + Jambes Complètes + Maillot Simple",
         duration: "1h15",
         price: "53€",
-        description: "Forfait épilation jambes complètes",
+        description: "",
         category: "forfaits",
         zones: ["aisselles", "jambes", "maillot"],
         featured: true,
@@ -426,7 +425,7 @@ export default function Esthetique() {
         name: "Aisselles + Jambes Complètes + Maillot Échancré",
         duration: "1h25",
         price: "59€",
-        description: "Forfait épilation jambes complètes + maillot échancré",
+        description: "",
         category: "forfaits",
         zones: ["aisselles", "jambes", "maillot"],
       },
@@ -435,8 +434,7 @@ export default function Esthetique() {
         name: "Aisselles + Jambes Complètes + Maillot Semi-Intégral",
         duration: "1h30",
         price: "64€",
-        description:
-          "Forfait épilation jambes complètes + maillot semi-intégral",
+        description: "",
         category: "forfaits",
         zones: ["aisselles", "jambes", "maillot"],
       },
@@ -445,7 +443,7 @@ export default function Esthetique() {
         name: "Aisselles + Jambes Complètes + Maillot Intégral",
         duration: "1h35",
         price: "69€",
-        description: "Forfait épilation complète intégrale",
+        description: "",
         category: "forfaits",
         zones: ["aisselles", "jambes", "maillot"],
         featured: true,
@@ -457,7 +455,7 @@ export default function Esthetique() {
         name: "Sourcils",
         duration: "15 min",
         price: "10€",
-        description: "Épilation et mise en forme des sourcils masculins",
+        description: "",
         category: "epilationsHommes",
         zone: "visage",
       },
@@ -466,7 +464,7 @@ export default function Esthetique() {
         name: "Nez ou Oreilles",
         duration: "10 min",
         price: "7€",
-        description: "Épilation précise des zones délicates",
+        description: "",
         category: "epilationsHommes",
         zone: "visage",
       },
@@ -475,7 +473,7 @@ export default function Esthetique() {
         name: "Aisselles",
         duration: "20 min",
         price: "15€",
-        description: "Épilation des aisselles masculines",
+        description: "",
         category: "epilationsHommes",
         zone: "corps",
       },
@@ -484,7 +482,7 @@ export default function Esthetique() {
         name: "Épaules",
         duration: "25 min",
         price: "15€",
-        description: "Épilation des épaules",
+        description: "",
         category: "epilationsHommes",
         zone: "corps",
       },
@@ -493,7 +491,7 @@ export default function Esthetique() {
         name: "Torse",
         duration: "35 min",
         price: "25€",
-        description: "Épilation complète du torse",
+        description: "",
         category: "epilationsHommes",
         zone: "corps",
         featured: true,
@@ -503,7 +501,7 @@ export default function Esthetique() {
         name: "Bas du Dos",
         duration: "15 min",
         price: "10€",
-        description: "Épilation du bas du dos",
+        description: "",
         category: "epilationsHommes",
         zone: "dos",
       },
@@ -512,7 +510,7 @@ export default function Esthetique() {
         name: "Dos Complet",
         duration: "40 min",
         price: "25€",
-        description: "Épilation complète du dos",
+        description: "",
         category: "epilationsHommes",
         zone: "dos",
         featured: true,
@@ -522,7 +520,7 @@ export default function Esthetique() {
         name: "1/2 Jambes",
         duration: "30 min",
         price: "24€",
-        description: "Épilation des demi-jambes masculines",
+        description: "",
         category: "epilationsHommes",
         zone: "jambes",
       },
@@ -531,7 +529,7 @@ export default function Esthetique() {
         name: "Jambes Complètes",
         duration: "50 min",
         price: "35€",
-        description: "Épilation complète des jambes masculines",
+        description: "",
         category: "epilationsHommes",
         zone: "jambes",
         featured: true,
@@ -660,9 +658,19 @@ export default function Esthetique() {
 
                   {/* Description - zone flexible */}
                   <div className="flex-grow">
-                    <p className="text-nude-600 leading-relaxed mb-4">
-                      {soin.description}
-                    </p>
+                    {soin.description && (
+                      <p className="text-nude-600 leading-relaxed mb-4">
+                        {soin.description}
+                      </p>
+                    )}
+
+                    {soin.details && (
+                      <div className="bg-nude-50 rounded-xl p-4 mb-4">
+                        <p className="text-sm text-nude-600 italic">
+                          {soin.details}
+                        </p>
+                      </div>
+                    )}
 
                     {soin.zones && (
                       <div className="flex flex-wrap gap-1 mb-4">
@@ -684,8 +692,15 @@ export default function Esthetique() {
                       <div className="text-nude-500 text-sm font-medium">
                         {soin.duration}
                       </div>
-                      <div className="text-2xl font-bold text-nude-600">
-                        {soin.price}
+                      <div className="text-right">
+                        <div className="text-2xl font-bold text-nude-600">
+                          {soin.price}
+                        </div>
+                        {soin.priceWithSemiPermanent && (
+                          <div className="text-lg font-semibold text-purple-600 mt-1">
+                            Avec semi: {soin.priceWithSemiPermanent}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

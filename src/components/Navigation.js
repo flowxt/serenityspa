@@ -9,7 +9,8 @@ export default function Navigation() {
 
   const navItems = [
     { name: "Accueil", href: "/" },
-    { name: "Soins", href: "/soins" },
+    { name: "Corps", href: "/soins" },
+    { name: "Visage", href: "/visage" },
     { name: "Esthétique", href: "/esthetique" },
     { name: "Avis", href: "/avis" },
     { name: "Contact", href: "/contact" },
