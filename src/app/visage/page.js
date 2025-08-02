@@ -275,7 +275,7 @@ export default function Visage() {
               Soins Visage
             </h1>
             <p className="text-xl md:text-2xl text-nude-600 max-w-4xl mx-auto leading-relaxed">
-              Découvrez nos soins visage d'exception alliant tradition et
+              Découvrez nos soins visage d&apos;exception alliant tradition et
               innovation pour sublimer votre beauté naturelle
             </p>
           </div>
@@ -504,8 +504,8 @@ export default function Visage() {
                 LED THERAPIE - LED LIGHT IR 2.0
               </h2>
               <p className="text-xl text-nude-600 max-w-4xl mx-auto leading-relaxed">
-                Technologie nouvelle génération LLLT couplée à l'infrarouge pour
-                une régénération cellulaire totale
+                Technologie nouvelle génération LLLT couplée à l&apos;infrarouge
+                pour une régénération cellulaire totale
               </p>
             </div>
 
@@ -638,9 +638,9 @@ export default function Visage() {
                 Notre Partenaire MySpa
               </h2>
               <p className="text-xl text-nude-600 max-w-3xl mx-auto leading-relaxed">
-                Découvrez l'excellence des produits MySpa de Deborrha, une
+                Découvrez l&apos;excellence des produits MySpa de Deborrha, une
                 marque créée par une meilleure ouvrière de France, pour des
-                rituels d'exception
+                rituels d&apos;exception
               </p>
             </div>
 
@@ -721,14 +721,14 @@ export default function Visage() {
             <div className="text-center">
               <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
                 <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-4">
-                  L'Excellence MySpa au Serenity Spa
+                  L&apos;Excellence MySpa au Serenity Spa
                 </h3>
                 <p className="text-nude-600 leading-relaxed mb-6">
                   Nous sommes fiers de vous proposer les rituels MySpa de
                   Deborrha, une marque française créée par une meilleure
-                  ouvrière de France. C'est un gage de qualité important que
-                  nous souhaitons souligner. Chaque soin MySpa est conçu pour
-                  offrir une expérience sensorielle inoubliable alliant
+                  ouvrière de France. C&apos;est un gage de qualité important
+                  que nous souhaitons souligner. Chaque soin MySpa est conçu
+                  pour offrir une expérience sensorielle inoubliable alliant
                   efficacité et plaisir.
                 </p>
                 <div className="grid md:grid-cols-3 gap-4 text-sm">
@@ -762,8 +762,8 @@ export default function Visage() {
               Option LED Thérapie
             </h3>
             <p className="text-lg opacity-90 leading-relaxed mb-6">
-              L'utilisation de la chromothérapie est fortement recommandée pour
-              augmenter durablement les effets du soin et conserver plus
+              L&apos;utilisation de la chromothérapie est fortement recommandée
+              pour augmenter durablement les effets du soin et conserver plus
               longtemps les résultats obtenus. Cette option est importante.
             </p>
           </div>
@@ -782,7 +782,7 @@ export default function Visage() {
                 Activité Majeure
               </h4>
               <p className="text-gray-800 opacity-90">
-                L'option LED doit être mise en valeur
+                L&apos;option LED doit être mise en valeur
               </p>
             </div>
             <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
