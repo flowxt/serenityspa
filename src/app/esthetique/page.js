@@ -25,10 +25,11 @@ export default function Esthetique() {
         name: "Mains de Velours",
         duration: "1h",
         price: "50€",
+        durationWithSemiPermanent: "1h30 avec semi-permanent",
         priceWithSemiPermanent: "85€",
         description:
           "Soin complet : Manucure, gommage et masque beurre de karité",
-        details: "Avec option semi-permanent = 85€",
+        details: "",
         category: "mains",
         type: "premium",
         featured: true,
@@ -88,10 +89,11 @@ export default function Esthetique() {
         name: "Pieds Enchanteurs",
         duration: "1h15",
         price: "70€",
+        durationWithSemiPermanent: "1h45 avec semi-permanent",
         priceWithSemiPermanent: "105€",
         description:
           "Bain de pied, pédicure, callosités avec patchs Yumifeet et masque beurre de karité",
-        details: "Avec option semi-permanent = 105€",
+        details: "",
         category: "pieds",
         type: "premium",
         featured: true,
@@ -688,20 +690,26 @@ export default function Esthetique() {
 
                   {/* Footer avec prix et durée - toujours en bas */}
                   <div className="mt-auto pt-4 border-t border-nude-100">
-                    <div className="flex justify-between items-center">
-                      <div className="text-nude-500 text-sm font-medium">
-                        {soin.duration}
-                      </div>
-                      <div className="text-right">
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <div className="text-nude-500 text-sm font-medium">
+                          {soin.duration}
+                        </div>
                         <div className="text-2xl font-bold text-nude-600">
                           {soin.price}
                         </div>
-                        {soin.priceWithSemiPermanent && (
-                          <div className="text-lg font-semibold text-purple-600 mt-1">
-                            Avec semi: {soin.priceWithSemiPermanent}
+                      </div>
+                      {soin.durationWithSemiPermanent &&
+                        soin.priceWithSemiPermanent && (
+                          <div className="flex justify-between items-center">
+                            <div className="text-nude-500 text-sm font-medium">
+                              {soin.durationWithSemiPermanent}
+                            </div>
+                            <div className="text-2xl font-bold text-nude-600">
+                              {soin.priceWithSemiPermanent}
+                            </div>
                           </div>
                         )}
-                      </div>
                     </div>
                   </div>
                 </div>
