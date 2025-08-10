@@ -38,6 +38,7 @@ export default function Visage() {
         name: "Rituel Express Oxygénant",
         duration: "30 min",
         price: "50€",
+        durationWithLed: "avec LED thérapie",
         priceWithLed: "90€",
         description:
           "Ce soin express adapté à tous, laissera votre peau hydratée et oxygénée.",
@@ -51,6 +52,7 @@ export default function Visage() {
         name: "Rituel Visage au Choix",
         duration: "1h",
         price: "69€",
+        durationWithLed: "avec LED thérapie",
         priceWithLed: "109€",
         description:
           "Voyage sensoriel avec trois univers au choix selon votre type de peau.",
@@ -64,6 +66,7 @@ export default function Visage() {
         name: "Rituel Jeunesse - Effet Lift",
         duration: "1h",
         price: "80€",
+        durationWithLed: "avec LED thérapie",
         priceWithLed: "120€",
         description:
           "Soin anti-âge aux actifs d'exception pour retrouver jeunesse et vitalité.",
