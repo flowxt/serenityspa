@@ -136,3 +136,7 @@ html, body {
 .framer-motion-container {
   overflow-x: hidden;
 }
+
+/* Styles pour les dropdowns personnalisés - plus besoin des styles natifs */
+
+

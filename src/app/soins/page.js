@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import CustomDropdown from "../../components/CustomDropdown";
 
 export default function Soins() {
   const [activeFilter, setActiveFilter] = useState("tous");
@@ -343,9 +344,25 @@ export default function Soins() {
       </section>
 
       {/* Filters Section */}
-      <section className="py-8 bg-white shadow-sm sticky top-20 z-40">
+      <section className="py-4 md:py-8 bg-white shadow-sm sticky top-20 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-3">
+          {/* Version mobile - Custom Dropdown */}
+          <div className="block md:hidden">
+            <CustomDropdown
+              options={filters.map((filter) => ({
+                value: filter.id,
+                label: `${filter.icon} ${filter.name} ${
+                  activeFilter === filter.id ? `(${filteredSoins.length})` : ""
+                }`,
+              }))}
+              value={activeFilter}
+              onChange={setActiveFilter}
+              placeholder="Choisir une catégorie"
+            />
+          </div>
+
+          {/* Version desktop - Boutons */}
+          <div className="hidden md:flex flex-wrap justify-center gap-3">
             {filters.map((filter) => (
               <motion.button
                 key={filter.id}

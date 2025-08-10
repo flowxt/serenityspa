@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import CustomDropdown from "../../components/CustomDropdown";
 
 export default function Visage() {
   const [activeTab, setActiveTab] = useState("traditionnels");
@@ -306,9 +307,27 @@ export default function Visage() {
       </section>
 
       {/* Tabs Section */}
-      <section className="py-8 bg-white shadow-sm sticky top-20 z-40">
+      <section className="py-4 md:py-8 bg-white shadow-sm sticky top-20 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-3">
+          {/* Version mobile - Custom Dropdown */}
+          <div className="block md:hidden">
+            <CustomDropdown
+              options={tabs.map((tab) => ({
+                value: tab.id,
+                label: `${tab.icon} ${tab.name} ${
+                  activeTab === tab.id
+                    ? `(${activeSoins.length + activeCures.length})`
+                    : ""
+                }`,
+              }))}
+              value={activeTab}
+              onChange={setActiveTab}
+              placeholder="Choisir une catégorie"
+            />
+          </div>
+
+          {/* Version desktop - Boutons */}
+          <div className="hidden md:flex flex-wrap justify-center gap-3">
             {tabs.map((tab) => (
               <motion.button
                 key={tab.id}
