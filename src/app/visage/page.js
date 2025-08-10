@@ -185,7 +185,7 @@ export default function Visage() {
         duration: "1h",
         price: "140€",
         description:
-          "Traitement anti-âge révolutionnaire et non invasif qui vise à rajeunir, régénérer et améliorer la qualité et l'apparence de la peau. On stimule la régénération cellulaire naturelle de la peau par mouvement de tapping. Un résultat NATUREL, durable et évolutif au fil des séances.",
+          "Technique révolutionnaire de micro-stimulation pour une peau raffermie et régénérée.",
         technology: "ACS SkinNeedler",
         type: "technique",
         featured: true,
@@ -696,6 +696,39 @@ export default function Visage() {
               </p>
             </div>
 
+            {/* Description du Skinnéo */}
+            <div className="mb-16">
+              <motion.div
+                className="bg-white rounded-3xl p-8 shadow-xl max-w-5xl mx-auto"
+                whileHover={{ y: -3, scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                <h3 className="text-2xl font-serif font-semibold text-nude-700 mb-6 text-center">
+                  Description du Skinnéo
+                </h3>
+                <div className="text-nude-700 leading-relaxed text-center">
+                  <p className="text-lg mb-4">
+                    <strong>
+                      Traitement anti-âge révolutionnaire et non invasif
+                    </strong>{" "}
+                    qui vise à rajeunir, régénérer et améliorer la qualité et
+                    l&apos;apparence de la peau.
+                  </p>
+                  <p className="text-lg mb-4">
+                    On stimule la{" "}
+                    <strong>régénération cellulaire naturelle</strong> de la
+                    peau par mouvement de tapping.
+                  </p>
+                  <p className="text-lg font-semibold text-nude-800">
+                    Un résultat <span className="text-green-600">NATUREL</span>,{" "}
+                    <span className="text-green-600">durable</span> et{" "}
+                    <span className="text-green-600">évolutif</span> au fil des
+                    séances.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+
             {/* Contre-indications */}
             <div className="mb-16">
               <motion.div
@@ -1041,52 +1074,6 @@ export default function Visage() {
           </div>
         </section>
       )}
-
-      {/* Option LED Thérapie globale */}
-      <section className="py-16 bg-gradient-to-r from-nude-600 to-nude-700">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <div className="mb-6">
-            <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-white text-3xl">💡</span>
-            </div>
-            <h3 className="text-2xl font-serif font-semibold mb-4">
-              Option LED Thérapie
-            </h3>
-            <p className="text-lg opacity-90 leading-relaxed mb-6">
-              L&apos;utilisation de la chromothérapie est fortement recommandée
-              pour augmenter durablement les effets du soin et conserver plus
-              longtemps les résultats obtenus. Cette option est importante.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 text-sm">
-            <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-              <h4 className="font-semibold mb-2 text-gray-800">
-                Résultats Optimisés
-              </h4>
-              <p className="text-gray-800 opacity-90">
-                Effets du soin multipliés et prolongés
-              </p>
-            </div>
-            <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-              <h4 className="font-semibold mb-2 text-gray-800">
-                Activité Majeure
-              </h4>
-              <p className="text-gray-800 opacity-90">
-                L&apos;option LED doit être mise en valeur
-              </p>
-            </div>
-            <div className="bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
-              <h4 className="font-semibold mb-2 text-gray-800">
-                Option Spa Privatif
-              </h4>
-              <p className="text-gray-800 opacity-90">
-                1h30 pour 1 personne : 55€
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Call to action */}
       <section className="py-16 bg-gradient-to-r from-nude-400 to-nude-600">
