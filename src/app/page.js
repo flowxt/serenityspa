@@ -11,13 +11,13 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-nude-50">
+    <div className="min-h-screen bg-nude-50 overflow-x-hidden">
       <Navigation />
 
       {/* Hero Section - Bienvenue */}
       <section
         id="accueil"
-        className="relative pt-20 min-h-screen flex items-center"
+        className="relative pt-20 min-h-screen flex items-center overflow-x-hidden"
       >
         <div className="absolute inset-0 z-0">
           <Image
@@ -130,7 +130,7 @@ export default function Home() {
       </section>
 
       {/* Section Mon Histoire */}
-      <section className="py-20 bg-nude-100">
+      <section className="py-20 bg-nude-100 overflow-x-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-16"
@@ -246,7 +246,7 @@ export default function Home() {
       </section>
 
       {/* Section Spa Privatif */}
-      <section className="py-20 bg-nude-50">
+      <section className="py-20 bg-nude-50 overflow-x-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-16"
@@ -470,7 +470,7 @@ export default function Home() {
       </section>
 
       {/* Section Visite Virtuelle */}
-      <section className="py-20 bg-nude-100">
+      <section className="py-20 bg-nude-100 overflow-x-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-16"

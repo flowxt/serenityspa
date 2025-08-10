@@ -125,3 +125,14 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Correction du scroll horizontal sur mobile causé par les animations */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Assurer que les animations ne dépassent pas de la viewport */
+.framer-motion-container {
+  overflow-x: hidden;
+}
