@@ -40,8 +40,7 @@ export default function Visage() {
         priceWithLed: "90€",
         description:
           "Ce soin express adapté à tous, laissera votre peau hydratée et oxygénée.",
-        details:
-          "Nettoyage, gommage, masque, crème. Avec option LED thérapie: 90€",
+        details: "Nettoyage, gommage, masque, crème.",
         brand: "MySpa",
         type: "traditionnel",
         featured: true,
@@ -55,7 +54,7 @@ export default function Visage() {
         description:
           "Voyage sensoriel avec trois univers au choix selon votre type de peau.",
         details:
-          "🏝️ Lagons de Polynésie (Toutes peaux) - 👑 Cléopâtre (Peau mixte à grasse) - 🌸 Secrets du Japon (Peau sensible). Avec option LED thérapie: 109€",
+          "🏝️ Lagons de Polynésie (Toutes peaux) - 👑 Cléopâtre (Peau mixte à grasse) - 🌸 Secrets du Japon (Peau sensible).",
         brand: "MySpa",
         featured: true,
       },
@@ -67,7 +66,7 @@ export default function Visage() {
         priceWithLed: "120€",
         description:
           "Soin anti-âge aux actifs d'exception pour retrouver jeunesse et vitalité.",
-        details: "Rides et fermeté. Avec option LED thérapie: 120€",
+        details: "Rides et fermeté.",
         brand: "MySpa",
         featured: true,
       },
@@ -98,12 +97,13 @@ export default function Visage() {
       {
         id: 7,
         name: "HydraFace Pureté",
-        duration: "1h - 1h15",
+        duration: "1h",
         price: "80€",
+        durationWithLed: "1h15 avec LED thérapie",
         priceWithLed: "120€",
         description:
           "Nettoyage intense combiné à un masque hydratant et à la cryothérapie pour une peau nettoyée et une luminosité spectaculaire.",
-        details: "Avec option LED thérapie (15min): 120€",
+        details: "",
         brand: "Yumi Beauty",
         technology: "HydraFace",
         featured: true,
@@ -111,13 +111,13 @@ export default function Visage() {
       {
         id: 8,
         name: "Soin Ciblé Anti-Âge",
-        duration: "1h - 1h15",
+        duration: "1h",
         price: "90€",
+        durationWithLed: "1h15 avec LED thérapie",
         priceWithLed: "130€",
         description:
           "Soin anti-âge avec ultrasons, radiofréquence, électrostimulation pour une peau nettoyée et une luminosité spectaculaire.",
-        details:
-          "Visage et cou avec masque et cryo. Avec option LED thérapie (15min): 130€",
+        details: "Visage et cou avec masque et cryo.",
         brand: "Yumi Beauty",
         technology: "HydraFace",
         featured: true,
@@ -125,12 +125,13 @@ export default function Visage() {
       {
         id: 9,
         name: "HydraFace Prestige",
-        duration: "1h30 - 1h45",
+        duration: "1h30",
         price: "120€",
+        durationWithLed: "1h45 avec LED thérapie",
         priceWithLed: "160€",
         description:
           "Soin complet sur mesure alliant nettoyage de peau et soin anti-âge pour une peau nettoyée et une luminosité spectaculaire.",
-        details: "Visage et cou. Avec option LED thérapie (15min): 160€",
+        details: "Visage et cou.",
         brand: "Yumi Beauty",
         technology: "HydraFace",
         featured: true,
@@ -142,10 +143,10 @@ export default function Visage() {
         name: "Séance LED Ciblé Yeux ou Lèvres",
         duration: "Séance",
         price: "45€",
+        priceWithCure: "405€",
         description:
           "Traitement ciblé pour les zones délicates du contour des yeux et des lèvres.",
-        details:
-          "💡 Technologie LED IR 2.0 - 📋 Cure 10 séances : 405€ - 📅 2 à 3 séances / semaine",
+        details: "💡 Technologie LED IR 2.0 - 📅 2 à 3 séances / semaine",
         technology: "LED IR 2.0",
         type: "ciblé",
       },
@@ -154,10 +155,11 @@ export default function Visage() {
         name: "Séance LED Thérapie",
         duration: "40 min",
         price: "55€",
+        priceWithCure: "495€",
         description:
           "Masque spécifique en fonction des besoins de votre peau avec 4 couleurs thérapeutiques.",
         details:
-          "🔵 Acné, points noirs, purifiant - 💧 Hydratation intensive - ✨ Taches pigmentaires, éclat - 📋 Cure 10 séances : 495€",
+          "🔵 Acné, points noirs, purifiant - 💧 Hydratation intensive - ✨ Taches pigmentaires, éclat",
         technology: "LED IR 2.0",
         featured: true,
       },
@@ -166,10 +168,11 @@ export default function Visage() {
         name: "Séance LED Thérapie Anti-Âge",
         duration: "40 min",
         price: "65€",
+        priceWithCure: "585€",
         description:
           "Masque anti-âge ++ au micro-courant drainant pour une peau lissée et raffermie.",
         details:
-          "🔴 Régénération cellulaire - ⚡ Micro-courant drainant - 💪 Raffermissement cutané - 📋 Cure 10 séances : 585€",
+          "🔴 Régénération cellulaire - ⚡ Micro-courant drainant - 💪 Raffermissement cutané",
         technology: "LED IR 2.0",
         type: "premium",
         featured: true,
@@ -178,13 +181,34 @@ export default function Visage() {
     skinneo: [
       {
         id: 13,
-        name: "Skinnéo Stimulation",
+        name: "Skinnéo Stimulation + LED",
         duration: "1h",
-        price: "85€",
+        price: "140€",
         description:
-          "Technique révolutionnaire de micro-stimulation pour une peau raffermie et régénérée.",
+          "Traitement anti-âge révolutionnaire et non invasif qui vise à rajeunir, régénérer et améliorer la qualité et l'apparence de la peau. On stimule la régénération cellulaire naturelle de la peau par mouvement de tapping. Un résultat NATUREL, durable et évolutif au fil des séances.",
         technology: "ACS SkinNeedler",
         type: "technique",
+        featured: true,
+      },
+      {
+        id: 14,
+        name: "Cure 3 Soins Skinnéo + LED",
+        duration: "3 séances",
+        price: "390€",
+        description:
+          "Cure de 3 soins Skinnéo pour un résultat anti-âge progressif et naturel.",
+        technology: "ACS SkinNeedler",
+        type: "cure",
+      },
+      {
+        id: 15,
+        name: "Cure 5 Soins Skinnéo + LED",
+        duration: "5 séances",
+        price: "630€",
+        description:
+          "Cure intensive de 5 soins Skinnéo pour un rajeunissement optimal.",
+        technology: "ACS SkinNeedler",
+        type: "cure",
         featured: true,
       },
     ],
@@ -194,40 +218,39 @@ export default function Visage() {
   const cures = {
     hydraface: [
       {
-        id: 14,
-        name: "Cure 3 Soins Pureté + LED",
+        id: 16,
+        name: "Cure de 3 soins pureté + LED",
         duration: "3 séances",
         price: "320€",
-        description:
-          "Cure de 3 soins Pureté avec LED thérapie pour un résultat optimal.",
-        details: "Un soin par mois. Pour un nettoyage en profondeur durable.",
+        description: "3 soins purifiants pour une peau nettoyée en profondeur.",
+        details: "Un soin par mois.",
         type: "cure",
       },
       {
-        id: 15,
-        name: "Cure d'attaque pour un effet maximal",
+        id: 17,
+        name: "Cure de 4 soins ciblé anti-âge + LED",
         duration: "4 séances",
         price: "470€",
-        description: "Cure intensive de 4 soins anti-âge avec LED thérapie.",
-        details: "Un soin par semaine. Cure d'attaque pour un effet maximal.",
+        description: "Cure intensive pour un résultat optimal.",
+        details: "Un soin par semaine.",
         type: "cure",
         featured: true,
       },
       {
-        id: 16,
-        name: "Programme anti-âge intensif",
+        id: 18,
+        name: "Cure de 3 soins Prestige + LED",
         duration: "3 séances",
         price: "430€",
         description:
-          "Cure de 3 soins Prestige avec LED thérapie pour un rajeunissement complet.",
-        details: "Un soin par mois. Programme anti-âge intensif.",
+          "3 soins complets pour une peau nettoyée et un effet anti-âge global.",
+        details: "Un soin par mois.",
         type: "cure",
         featured: true,
       },
     ],
     led: [
       {
-        id: 17,
+        id: 19,
         name: "Cure d'Entretien LED Thérapie",
         duration: "4 séances",
         price: "198€",
@@ -238,7 +261,7 @@ export default function Visage() {
         type: "entretien",
       },
       {
-        id: 18,
+        id: 20,
         name: "Cure d'Entretien Anti-Âge",
         duration: "4 séances",
         price: "235€",
@@ -407,20 +430,35 @@ export default function Visage() {
 
                   {/* Footer avec prix et durée */}
                   <div className="mt-auto pt-4 border-t border-nude-100">
-                    <div className="flex justify-between items-center">
-                      <div className="text-nude-500 text-sm font-medium">
-                        {soin.duration}
-                      </div>
-                      <div className="text-right">
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <div className="text-nude-500 text-sm font-medium">
+                          {soin.duration}
+                        </div>
                         <div className="text-2xl font-bold text-nude-600">
                           {soin.price}
                         </div>
-                        {soin.priceWithLed && (
-                          <div className="text-lg font-semibold text-purple-600 mt-1">
-                            Avec LED: {soin.priceWithLed}
-                          </div>
-                        )}
                       </div>
+                      {soin.durationWithLed && soin.priceWithLed && (
+                        <div className="flex justify-between items-center">
+                          <div className="text-nude-500 text-sm font-medium">
+                            {soin.durationWithLed}
+                          </div>
+                          <div className="text-2xl font-bold text-nude-600">
+                            {soin.priceWithLed}
+                          </div>
+                        </div>
+                      )}
+                      {soin.priceWithCure && (
+                        <div className="flex justify-between items-center">
+                          <div className="text-nude-500 text-sm font-medium">
+                            Cure 10 séances
+                          </div>
+                          <div className="text-2xl font-bold text-green-600">
+                            {soin.priceWithCure}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -621,9 +659,262 @@ export default function Visage() {
                         </strong>
                       </p>
                     </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-orange-500 mt-1">⚠️</span>
+                      <p className="text-sm">
+                        <strong>Maladie avec troubles de l&apos;ADN</strong>
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-orange-500 mt-1">⚠️</span>
+                      <p className="text-sm">
+                        <strong>
+                          Grain de beauté cancéreux ou syndrome des nævus
+                          dyspepsiques héréditaires
+                        </strong>
+                      </p>
+                    </div>
                   </div>
                 </motion.div>
               </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Section Skinnéo Info et Contre-indications */}
+      {activeTab === "skinneo" && (
+        <section className="py-16 bg-gradient-to-br from-green-50 to-emerald-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
+                Skinnéo Stimulation - ACS SkinNeedler
+              </h2>
+              <p className="text-xl text-nude-600 max-w-4xl mx-auto leading-relaxed">
+                Technologie révolutionnaire de micro-stimulation pour une
+                régénération cellulaire naturelle
+              </p>
+            </div>
+
+            {/* Contre-indications */}
+            <div className="mb-16">
+              <motion.div
+                className="bg-orange-50 rounded-3xl p-8 shadow-xl border-l-4 border-orange-400 max-w-5xl mx-auto"
+                whileHover={{ y: -3, scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                <h3 className="text-2xl font-serif font-semibold text-orange-800 mb-6">
+                  Contre-indications du Skinnéo
+                </h3>
+                <div className="space-y-4 text-orange-700 grid md:grid-cols-2 gap-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Anti-inflammatoires</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Antibiotiques</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Maladies tumorales</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Infections aiguës ou inflammatoires</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>États fébriles</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Médicaments photo-sensibilisants</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>
+                        Médicaments affectant le système immunitaire
+                      </strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>
+                        Médicaments affectant la coagulation du sang
+                      </strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Grossesse et allaitement</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Affections cutanées</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Inflammation de l&apos;intestin</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Tendance aux chéloïdes</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Phénomène de Koebner</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Tous types de cancers</strong>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8 p-6 bg-red-100 rounded-xl border border-red-300">
+                  <h4 className="font-semibold text-red-800 mb-3">
+                    Délais de sécurité obligatoires :
+                  </h4>
+                  <div className="grid md:grid-cols-2 gap-3 text-sm text-red-700">
+                    <p>• Isotrétinoïne (vitamine A) : 6 mois après arrêt</p>
+                    <p>• Radiations et chimiothérapie : accord médical écrit</p>
+                    <p>• Traitements laser : 6 mois après</p>
+                    <p>• Opérations récentes : 6 mois après</p>
+                    <p>• Lifting : 6 semaines après</p>
+                    <p>• Injections de remplissage : 6 semaines après</p>
+                    <p>• Injections toxine botulique : 1 semaine après</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Section HydraFace Contre-indications */}
+      {activeTab === "hydraface" && (
+        <section className="py-16 bg-gradient-to-br from-cyan-50 to-blue-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-serif font-light text-nude-700 mb-6">
+                HydraFace by Yumi Beauty
+              </h2>
+              <p className="text-xl text-nude-600 max-w-4xl mx-auto leading-relaxed">
+                Technologie avancée pour un nettoyage profond et une
+                régénération cutanée
+              </p>
+            </div>
+
+            {/* Contre-indications */}
+            <div className="mb-16">
+              <motion.div
+                className="bg-orange-50 rounded-3xl p-8 shadow-xl border-l-4 border-orange-400 max-w-4xl mx-auto"
+                whileHover={{ y: -3, scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                <h3 className="text-2xl font-serif font-semibold text-orange-800 mb-6">
+                  Contre-indications HydraFace
+                </h3>
+                <div className="space-y-4 text-orange-700">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Allergie aux acides de fruits AHA et BHA</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Femme enceinte et allaitante</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>
+                        Maladie de peau en crise (eczéma, psoriasis, herpès,
+                        vitiligo)
+                      </strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Cancers</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Chimiothérapie et radiothérapie</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Épilepsie</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Diabète sévère</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Pacemaker</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Cicatrices récentes</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>Traitement Roacutane</strong>
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 mt-1">⚠️</span>
+                    <p className="text-sm">
+                      <strong>
+                        Appareil auditif (les enlever durant le soin)
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>

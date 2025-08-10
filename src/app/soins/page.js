@@ -133,7 +133,7 @@ export default function Soins() {
       },
       {
         id: 12,
-        name: "Massages aux Pierres Chaudes",
+        name: "Massage aux Pierres Chaudes",
         duration: "1h15",
         price: "105€",
         description:
