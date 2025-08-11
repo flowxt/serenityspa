@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 
@@ -14,6 +14,10 @@ export default function Contact() {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', null
+  const [submitMessage, setSubmitMessage] = useState("");
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -22,10 +26,58 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Logique d'envoi du formulaire à implémenter
-    console.log("Formulaire envoyé:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    setSubmitMessage("");
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.nom,
+          email: formData.email,
+          phone: formData.telephone,
+          subject: formData.sujet,
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setSubmitMessage("✨ Parfait ! Nous avons bien reçu votre message et vous répondrons dans les plus brefs délais. Merci de votre confiance !");
+        
+        // Réinitialiser le formulaire après succès
+        setFormData({
+          nom: "",
+          email: "",
+          telephone: "",
+          sujet: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus('error');
+        setSubmitMessage(data.error || "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement.");
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
+      setSubmitStatus('error');
+      setSubmitMessage("Erreur de connexion. Veuillez vérifier votre connexion internet et réessayer.");
+    } finally {
+      setIsSubmitting(false);
+      
+      // Masquer le message après 8 secondes
+      setTimeout(() => {
+        setSubmitStatus(null);
+        setSubmitMessage("");
+      }, 8000);
+    }
   };
 
   const sujets = [
@@ -207,14 +259,71 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Message de statut */}
+                <AnimatePresence>
+                  {submitStatus && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                      transition={{ duration: 0.3 }}
+                      className={`p-4 rounded-xl border-l-4 ${
+                        submitStatus === 'success'
+                          ? 'bg-green-50 border-green-400 text-green-700'
+                          : 'bg-red-50 border-red-400 text-red-700'
+                      }`}
+                    >
+                      <div className="flex items-start space-x-3">
+                        <span className="text-xl mt-0.5">
+                          {submitStatus === 'success' ? '✅' : '❌'}
+                        </span>
+                        <p className="text-sm font-medium leading-relaxed">
+                          {submitMessage}
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
                 <motion.button
                   type="submit"
-                  className="w-full btn-spa text-white py-4 px-8 rounded-xl font-semibold text-lg shadow-xl"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
+                  disabled={isSubmitting}
+                  className={`w-full py-4 px-8 rounded-xl font-semibold text-lg shadow-xl transition-all duration-300 ${
+                    isSubmitting
+                      ? 'bg-nude-300 text-nude-500 cursor-not-allowed'
+                      : 'btn-spa text-white hover:shadow-2xl'
+                  }`}
+                  whileHover={!isSubmitting ? { scale: 1.02, y: -2 } : {}}
+                  whileTap={!isSubmitting ? { scale: 0.98 } : {}}
                   transition={{ duration: 0.2 }}
                 >
-                  Envoyer mon message ✨
+                  {isSubmitting ? (
+                    <div className="flex items-center justify-center space-x-2">
+                      <svg
+                        className="animate-spin h-5 w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      <span>Envoi en cours...</span>
+                    </div>
+                  ) : (
+                    'Envoyer mon message ✨'
+                  )}
                 </motion.button>
               </form>
             </motion.div>
