@@ -54,6 +54,14 @@ export default function Navigation() {
                 )
               )}
               <a
+                href="https://www.kalendes.com/site/serenityspanoemiesaddier/gift"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-nude-400 text-nude-700 hover:bg-nude-100 px-6 py-2 rounded-full font-medium shadow-lg inline-block transition-colors duration-300"
+              >
+                Carte Cadeau
+              </a>
+              <a
                 href="https://www.kalendes.com/site/serenityspanoemiesaddier/welcome"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -121,6 +129,14 @@ export default function Navigation() {
                   </Link>
                 )
               )}
+              <a
+                href="https://www.kalendes.com/site/serenityspanoemiesaddier/gift"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-nude-400 text-nude-700 hover:bg-nude-100 px-6 py-2 rounded-full font-medium shadow-lg w-full mt-4 inline-block text-center transition-colors duration-300"
+              >
+                Carte Cadeau
+              </a>
               <a
                 href="https://www.kalendes.com/site/serenityspanoemiesaddier/welcome"
                 target="_blank"
